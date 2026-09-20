@@ -20,15 +20,11 @@ How can AI systems compute, represent, persist and govern semantic and epistemic
 | Repository | Programme role | Macro relation to ROA |
 |---|---|---|
 | [ROA](https://github.com/Luke883i/ROA) | Theoretical / formal framework | Theoretical anchor |
-| [A-OSP](https://github.com/Luke883i/aosp1) | Epistemic substrate | Explicit implementation witness |
+| [AOSP](https://github.com/Luke883i/aosp1) | Epistemic substrate | Explicit implementation witness |
 | [iKant](https://github.com/Luke883i/ikant) | Governed epistemic-agent runtime | Explicit CRC/ROA alignment |
 | [iKant_LE](https://github.com/Luke883i/iKant_LE) | Compressed constitutional runtime kernel | Programme branch; compression lineage from iKant |
 | [ICTC](https://github.com/Luke883i/ictc) | Compliance knowledge-governance vertical | Applied programme branch |
 | [Juriscribe](https://github.com/Luke883i/juriscribe) | Legal/scientific/editorial research vertical | Applied programme branch |
-| Teddy | Embodied/local interaction experiment | Experimental programme branch |
-| GPDP | Procedural/legal case-study corpus | Case-study programme branch |
-| aosp | Legacy A-OSP engineering lineage | Historical programme lineage |
-| [a-osp](https://github.com/Luke883i/a-osp) | Public A-OSP pointer | Programme pointer |
 
 Machine-readable programme membership and relation semantics live in [`PROGRAMME.json`](PROGRAMME.json). The reusable header contract and falsification model live in [`PROGRAMME_HEADER_CONTRACT.md`](PROGRAMME_HEADER_CONTRACT.md).
 
