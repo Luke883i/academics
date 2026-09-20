@@ -72,14 +72,6 @@
       "status_authority": "repository-local"
     },
     {
-      "id": "GPDP",
-      "repo": "Luke883i/GPDP",
-      "role": "PROCEDURAL_CASE_STUDY",
-      "class": "CASE_STUDY",
-      "relation_to_roa": "PROGRAMME_BRANCH",
-      "status_authority": "repository-local"
-    },
-    {
       "id": "aosp",
       "repo": "Luke883i/aosp",
       "role": "LEGACY_AOSP_LINEAGE",
@@ -87,23 +79,6 @@
       "relation_to_roa": "PROGRAMME_LINEAGE",
       "status_authority": "repository-local"
     },
-    {
-      "id": "a-osp",
-      "repo": "Luke883i/a-osp",
-      "role": "AOSP_PUBLIC_POINTER",
-      "class": "POINTER",
-      "relation_to_roa": "PROGRAMME_POINTER",
-      "status_authority": "repository-local"
-    },
-    {
-      "id": "aosp1-console",
-      "repo": "Luke883i/aosp1-console",
-      "role": "AUXILIARY_PLACEHOLDER",
-      "class": "AUXILIARY",
-      "relation_to_roa": "PROGRAMME_AUXILIARY",
-      "materialization": "EMPTY_UNINITIALIZED",
-      "status_authority": "none-yet"
-    }
   ],
   "relations": [
     {
@@ -136,12 +111,6 @@
       "type": "ENGINEERING_LINEAGE",
       "strength": "LINEAGE"
     },
-    {
-      "from": "a-osp",
-      "to": "aosp1",
-      "type": "PUBLIC_POINTER",
-      "strength": "PROGRAMMATIC"
-    }
   ],
   "claim_boundary": {
     "programme_membership_implies_formal_derivation": false,
