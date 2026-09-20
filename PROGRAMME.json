@@ -1,0 +1,152 @@
+{
+  "schema": "roa-research-programme/v1",
+  "programme": "ROA Research Programme — Computational Epistemics, Semantic Architectures & Governable AI Systems",
+  "hub": "Luke883i/academics",
+  "theoretical_anchor": "Luke883i/ROA",
+  "state_policy": "Repository-local authorities own current state. This registry owns programme membership, role and cross-repository relation semantics only.",
+  "repositories": [
+    {
+      "id": "academics",
+      "repo": "Luke883i/academics",
+      "role": "PROGRAMME_HUB",
+      "class": "COORDINATION",
+      "relation_to_roa": "PROGRAMME_COORDINATION",
+      "status_authority": "repository-local"
+    },
+    {
+      "id": "ROA",
+      "repo": "Luke883i/ROA",
+      "role": "THEORY_FRAMEWORK",
+      "class": "CORE_THEORY",
+      "relation_to_roa": "THEORETICAL_ANCHOR",
+      "status_authority": "repository-local"
+    },
+    {
+      "id": "aosp1",
+      "repo": "Luke883i/aosp1",
+      "role": "EPISTEMIC_SUBSTRATE",
+      "class": "CORE_ENGINEERING",
+      "relation_to_roa": "IMPLEMENTATION_WITNESS",
+      "relation_strength": "EXPLICIT",
+      "status_authority": "repository-local"
+    },
+    {
+      "id": "ikant",
+      "repo": "Luke883i/ikant",
+      "role": "EPISTEMIC_AGENT_RUNTIME",
+      "class": "CORE_AGENT",
+      "relation_to_roa": "FORMAL_ALIGNMENT",
+      "relation_strength": "EXPLICIT",
+      "status_authority": "repository-local"
+    },
+    {
+      "id": "iKant_LE",
+      "repo": "Luke883i/iKant_LE",
+      "role": "COMPRESSED_RUNTIME_KERNEL",
+      "class": "CORE_COMPRESSION",
+      "relation_to_roa": "PROGRAMME_BRANCH",
+      "status_authority": "repository-local"
+    },
+    {
+      "id": "ictc",
+      "repo": "Luke883i/ictc",
+      "role": "COMPLIANCE_VERTICAL",
+      "class": "APPLIED",
+      "relation_to_roa": "PROGRAMME_BRANCH",
+      "status_authority": "repository-local"
+    },
+    {
+      "id": "juriscribe",
+      "repo": "Luke883i/juriscribe",
+      "role": "LEGAL_SCIENTIFIC_EDITORIAL_VERTICAL",
+      "class": "APPLIED",
+      "relation_to_roa": "PROGRAMME_BRANCH",
+      "status_authority": "repository-local"
+    },
+    {
+      "id": "teddy",
+      "repo": "Luke883i/teddy",
+      "role": "EMBODIED_INTERACTION_EXPERIMENT",
+      "class": "EXPERIMENTAL",
+      "relation_to_roa": "PROGRAMME_BRANCH",
+      "status_authority": "repository-local"
+    },
+    {
+      "id": "GPDP",
+      "repo": "Luke883i/GPDP",
+      "role": "PROCEDURAL_CASE_STUDY",
+      "class": "CASE_STUDY",
+      "relation_to_roa": "PROGRAMME_BRANCH",
+      "status_authority": "repository-local"
+    },
+    {
+      "id": "aosp",
+      "repo": "Luke883i/aosp",
+      "role": "LEGACY_AOSP_LINEAGE",
+      "class": "LEGACY",
+      "relation_to_roa": "PROGRAMME_LINEAGE",
+      "status_authority": "repository-local"
+    },
+    {
+      "id": "a-osp",
+      "repo": "Luke883i/a-osp",
+      "role": "AOSP_PUBLIC_POINTER",
+      "class": "POINTER",
+      "relation_to_roa": "PROGRAMME_POINTER",
+      "status_authority": "repository-local"
+    },
+    {
+      "id": "aosp1-console",
+      "repo": "Luke883i/aosp1-console",
+      "role": "AUXILIARY_PLACEHOLDER",
+      "class": "AUXILIARY",
+      "relation_to_roa": "PROGRAMME_AUXILIARY",
+      "materialization": "EMPTY_UNINITIALIZED",
+      "status_authority": "none-yet"
+    }
+  ],
+  "relations": [
+    {
+      "from": "academics",
+      "to": "ROA",
+      "type": "ACADEMIC_LINEAGE_TO_THEORY",
+      "strength": "PROGRAMMATIC"
+    },
+    {
+      "from": "ROA",
+      "to": "aosp1",
+      "type": "IMPLEMENTATION_WITNESS",
+      "strength": "EXPLICIT"
+    },
+    {
+      "from": "ROA",
+      "to": "ikant",
+      "type": "CRC_ROA_ALIGNMENT",
+      "strength": "EXPLICIT"
+    },
+    {
+      "from": "ikant",
+      "to": "iKant_LE",
+      "type": "COMPRESSION_LINEAGE",
+      "strength": "PROGRAMMATIC"
+    },
+    {
+      "from": "aosp",
+      "to": "aosp1",
+      "type": "ENGINEERING_LINEAGE",
+      "strength": "LINEAGE"
+    },
+    {
+      "from": "a-osp",
+      "to": "aosp1",
+      "type": "PUBLIC_POINTER",
+      "strength": "PROGRAMMATIC"
+    }
+  ],
+  "claim_boundary": {
+    "programme_membership_implies_formal_derivation": false,
+    "programme_membership_implies_conformance": false,
+    "programme_membership_implies_empirical_validation": false,
+    "programme_membership_implies_production_readiness": false
+  }
+}
