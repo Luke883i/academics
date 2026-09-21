@@ -1,92 +1,92 @@
 {
-  "schema": "roa-research-programme/v1",
-  "programme": "ROA Research Programme — Computational Epistemics, Semantic Architectures & Governable AI Systems",
-  "hub": "Luke883i/academics",
-  "theoretical_anchor": "Luke883i/ROA",
-  "state_policy": "Repository-local authorities own current state. This registry owns programme membership, role and cross-repository relation semantics only.",
+  "schema": "roa-research-programme/v2",
+  "programme": {
+    "id": "PRG-ROA",
+    "name": "ROA Research Programme — Computational Epistemics, Semantic Architectures & Governable AI Systems",
+    "short_name": "ROA Research Programme",
+    "hub": "academics",
+    "theoretical_anchor": "ROA",
+    "thesis": "The ROA Research Programme studies how bounded human-AI observers can construct, transform, persist and use epistemic state without silently converting representation into reality, model output into evidence, evidence into authority, or execution into observed-world truth.",
+    "research_question": "How can AI systems compute, represent, persist and govern semantic and epistemic state within declared horizons while keeping evidence, inference, authority, decision, execution and observed-world truth distinguishable and reconstructable?",
+    "state_policy": "Repository-local authorities own current runtime, release, evidence and governance state. This registry owns programme identity, membership, roles, cross-repository relations, academic lineage and shared claim boundaries only."
+  },
   "repositories": [
     {
       "id": "academics",
       "repo": "Luke883i/academics",
       "role": "PROGRAMME_HUB",
       "class": "COORDINATION",
-      "relation_to_roa": "PROGRAMME_COORDINATION",
-      "status_authority": "repository-local"
+      "status": "CURRENT",
+      "macro_relation_to_roa": "PROGRAMME_COORDINATION"
     },
     {
       "id": "ROA",
       "repo": "Luke883i/ROA",
       "role": "THEORY_FRAMEWORK",
       "class": "CORE_THEORY",
-      "relation_to_roa": "THEORETICAL_ANCHOR",
-      "status_authority": "repository-local"
+      "status": "CURRENT",
+      "macro_relation_to_roa": "THEORETICAL_ANCHOR"
     },
     {
       "id": "aosp1",
       "repo": "Luke883i/aosp1",
       "role": "EPISTEMIC_SUBSTRATE",
       "class": "CORE_ENGINEERING",
-      "relation_to_roa": "IMPLEMENTATION_WITNESS",
-      "relation_strength": "EXPLICIT",
-      "status_authority": "repository-local"
+      "status": "CURRENT",
+      "macro_relation_to_roa": "IMPLEMENTATION_WITNESS",
+      "macro_relation_strength": "EXPLICIT"
     },
     {
       "id": "ikant",
       "repo": "Luke883i/ikant",
       "role": "EPISTEMIC_AGENT_RUNTIME",
       "class": "CORE_AGENT",
-      "relation_to_roa": "FORMAL_ALIGNMENT",
-      "relation_strength": "EXPLICIT",
-      "status_authority": "repository-local"
+      "status": "CURRENT",
+      "macro_relation_to_roa": "FORMAL_ALIGNMENT",
+      "macro_relation_strength": "EXPLICIT"
     },
     {
       "id": "iKant_LE",
       "repo": "Luke883i/iKant_LE",
       "role": "COMPRESSED_RUNTIME_KERNEL",
       "class": "CORE_COMPRESSION",
-      "relation_to_roa": "PROGRAMME_BRANCH",
-      "status_authority": "repository-local"
+      "status": "CURRENT",
+      "macro_relation_to_roa": "PROGRAMME_BRANCH"
     },
     {
       "id": "ictc",
       "repo": "Luke883i/ictc",
       "role": "COMPLIANCE_VERTICAL",
       "class": "APPLIED",
-      "relation_to_roa": "PROGRAMME_BRANCH",
-      "status_authority": "repository-local"
+      "status": "CURRENT",
+      "macro_relation_to_roa": "PROGRAMME_BRANCH"
     },
     {
       "id": "juriscribe",
       "repo": "Luke883i/juriscribe",
       "role": "LEGAL_SCIENTIFIC_EDITORIAL_VERTICAL",
       "class": "APPLIED",
-      "relation_to_roa": "PROGRAMME_BRANCH",
-      "status_authority": "repository-local"
+      "status": "CURRENT",
+      "macro_relation_to_roa": "PROGRAMME_BRANCH"
     },
     {
       "id": "teddy",
       "repo": "Luke883i/teddy",
       "role": "EMBODIED_INTERACTION_EXPERIMENT",
       "class": "EXPERIMENTAL",
-      "relation_to_roa": "PROGRAMME_BRANCH",
-      "status_authority": "repository-local"
+      "status": "CURRENT",
+      "macro_relation_to_roa": "PROGRAMME_BRANCH"
     },
     {
       "id": "aosp",
       "repo": "Luke883i/aosp",
       "role": "LEGACY_AOSP_LINEAGE",
       "class": "LEGACY",
-      "relation_to_roa": "PROGRAMME_LINEAGE",
-      "status_authority": "repository-local"
-    },
+      "status": "LEGACY",
+      "macro_relation_to_roa": "PROGRAMME_LINEAGE"
+    }
   ],
   "relations": [
-    {
-      "from": "academics",
-      "to": "ROA",
-      "type": "ACADEMIC_LINEAGE_TO_THEORY",
-      "strength": "PROGRAMMATIC"
-    },
     {
       "from": "ROA",
       "to": "aosp1",
@@ -110,12 +110,95 @@
       "to": "aosp1",
       "type": "ENGINEERING_LINEAGE",
       "strength": "LINEAGE"
-    },
+    }
   ],
-  "claim_boundary": {
-    "programme_membership_implies_formal_derivation": false,
-    "programme_membership_implies_conformance": false,
-    "programme_membership_implies_empirical_validation": false,
-    "programme_membership_implies_production_readiness": false
+  "academic_lineage": {
+    "boundary": "Academic lineage records antecedents of the programme. It does not imply that earlier theses already contained, derived or validated the later ROA framework.",
+    "items": [
+      {
+        "id": "TH-2009",
+        "year": 2009,
+        "institution": "UniPi",
+        "qualification": "M.Sc. Applied Mathematics for Economics",
+        "topic": "Game theory in social negotiations",
+        "path": "academic-lineage/2009 - UniPi - M.sc. Matematica Applicata Economia - Tesi in Teoria dei Giochi in Negoziazioni Sociali.pdf",
+        "blob_sha": "b263a67194b2e0f502a2acdea72cbc9ceca05fe2"
+      },
+      {
+        "id": "TH-2011",
+        "year": 2011,
+        "institution": "UniPi",
+        "qualification": "M.Sc. Audit & Corporate Criminal Law",
+        "topic": "Corruption-risk management",
+        "path": "academic-lineage/2011 - UniPi - M.sc. Audit & Diritto Penale di Impresa - Tesi in Gestione del Rischio Corruzione.pdf",
+        "blob_sha": "995aad80d8933791b074e3c7c09535822cdccb63"
+      },
+      {
+        "id": "TH-2022",
+        "year": 2022,
+        "institution": "UniMi",
+        "qualification": "M.Sc. Cybersecurity",
+        "topic": "Organization, governance and control of security",
+        "path": "academic-lineage/2022 - UniMi - M.sc. Cybersecurity - Tesi in Organizzazione, Gestione e Controllo della Sicurezza.pdf",
+        "blob_sha": "783667705671e7274f0fee5b9b4e8d215b966655"
+      },
+      {
+        "id": "TH-2025",
+        "year": 2025,
+        "institution": "UniUd",
+        "qualification": "Pg.Dip. Philosophy of AI & Information",
+        "topic": "Reticular Local Abstraction and epistemic convolutions (RLA-ECNN)",
+        "path": "academic-lineage/2025 - UniUd - Pg.Dip. Filosofia AI & Informazioni - Tesi in Modello Concettuale delle Rete Locali di Astrazione .pdf",
+        "blob_sha": "7aa056bc5d50a6c62ce77debd8b04e8813db7e7e"
+      }
+    ],
+    "relations": [
+      {
+        "from": "TH-2025",
+        "to": "ROA",
+        "type": "SUBSEQUENT_FRAMEWORK",
+        "strength": "PROGRAMMATIC"
+      }
+    ]
+  },
+  "governance": {
+    "shared_invariant": [
+      "representation != reality",
+      "model output != evidence",
+      "evidence != permission",
+      "permission != decision",
+      "decision != execution",
+      "execution != observed-world truth",
+      "receipt != external validation",
+      "implementation != scientific proof"
+    ],
+    "claim_boundary": {
+      "programme_membership_implies_formal_derivation": false,
+      "programme_membership_implies_conformance": false,
+      "programme_membership_implies_empirical_validation": false,
+      "programme_membership_implies_production_readiness": false
+    },
+    "membership_header": {
+      "version": 1,
+      "marker": "roa-programme-header:v1",
+      "required_semantics": [
+        "canonical programme identity",
+        "programme hub",
+        "repository-specific role",
+        "ROA theoretical anchor",
+        "repository-local authority boundary",
+        "membership non-entailment boundary"
+      ],
+      "mutable_release_state_forbidden": true,
+      "falsification_evidence": {
+        "generated_headers_accepted": 11,
+        "mutated_headers_rejected": 110,
+        "survivors": 0
+      },
+      "applies_to_statuses": [
+        "CURRENT"
+      ],
+      "legacy_nodes_may_omit_header": true
+    }
   }
 }
