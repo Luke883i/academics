@@ -1,14 +1,15 @@
 {
-  "schema": "roa-research-programme/v2",
+  "schema": "roa-research-programme/v3",
   "programme": {
     "id": "PRG-ROA",
-    "name": "ROA Research Programme — Computational Epistemics, Semantic Architectures & Governable AI Systems",
+    "name": "ROA Research Programme - Computational Epistemics, Semantic Architectures & Governable AI Systems",
     "short_name": "ROA Research Programme",
     "hub": "academics",
     "theoretical_anchor": "ROA",
     "thesis": "The ROA Research Programme studies how bounded human-AI observers can construct, transform, persist and use epistemic state without silently converting representation into reality, model output into evidence, evidence into authority, or execution into observed-world truth.",
     "research_question": "How can AI systems compute, represent, persist and govern semantic and epistemic state within declared horizons while keeping evidence, inference, authority, decision, execution and observed-world truth distinguishable and reconstructable?",
-    "state_policy": "Repository-local authorities own current runtime, release, evidence and governance state. This registry owns programme identity, membership, roles, cross-repository relations, academic lineage and shared claim boundaries only."
+    "state_policy": "Repository-local authorities own current runtime, release, evidence and governance state. This registry owns programme identity, membership, roles, cross-repository relations and shared claim boundaries only.",
+    "hub_scope": "Public programme entrypoint and coordination surface. Author and academic-archive metadata are separately authoritative in AUTHOR.json."
   },
   "repositories": [
     {
@@ -51,7 +52,7 @@
       "role": "COMPRESSED_RUNTIME_KERNEL",
       "class": "CORE_COMPRESSION",
       "status": "CURRENT",
-      "macro_relation_to_roa": "PROGRAMME_BRANCH"
+      "macro_relation_to_roa": "PROGRAMME_COMPONENT"
     },
     {
       "id": "ictc",
@@ -59,7 +60,7 @@
       "role": "COMPLIANCE_VERTICAL",
       "class": "APPLIED",
       "status": "CURRENT",
-      "macro_relation_to_roa": "PROGRAMME_BRANCH"
+      "macro_relation_to_roa": "APPLIED_SURFACE"
     },
     {
       "id": "juriscribe",
@@ -67,7 +68,7 @@
       "role": "LEGAL_SCIENTIFIC_EDITORIAL_VERTICAL",
       "class": "APPLIED",
       "status": "CURRENT",
-      "macro_relation_to_roa": "PROGRAMME_BRANCH"
+      "macro_relation_to_roa": "APPLIED_SURFACE"
     },
     {
       "id": "teddy",
@@ -75,7 +76,7 @@
       "role": "EMBODIED_INTERACTION_EXPERIMENT",
       "class": "EXPERIMENTAL",
       "status": "CURRENT",
-      "macro_relation_to_roa": "PROGRAMME_BRANCH"
+      "macro_relation_to_roa": "EXPERIMENTAL_SURFACE"
     },
     {
       "id": "aosp",
@@ -112,54 +113,24 @@
       "strength": "LINEAGE"
     }
   ],
-  "academic_lineage": {
-    "boundary": "Academic lineage records antecedents of the programme. It does not imply that earlier theses already contained, derived or validated the later ROA framework.",
-    "items": [
-      {
-        "id": "TH-2009",
-        "year": 2009,
-        "institution": "UniPi",
-        "qualification": "M.Sc. Applied Mathematics for Economics",
-        "topic": "Game theory in social negotiations",
-        "path": "academic-lineage/2009 - UniPi - M.sc. Matematica Applicata Economia - Tesi in Teoria dei Giochi in Negoziazioni Sociali.pdf",
-        "blob_sha": "b263a67194b2e0f502a2acdea72cbc9ceca05fe2"
-      },
-      {
-        "id": "TH-2011",
-        "year": 2011,
-        "institution": "UniPi",
-        "qualification": "M.Sc. Audit & Corporate Criminal Law",
-        "topic": "Corruption-risk management",
-        "path": "academic-lineage/2011 - UniPi - M.sc. Audit & Diritto Penale di Impresa - Tesi in Gestione del Rischio Corruzione.pdf",
-        "blob_sha": "995aad80d8933791b074e3c7c09535822cdccb63"
-      },
-      {
-        "id": "TH-2022",
-        "year": 2022,
-        "institution": "UniMi",
-        "qualification": "M.Sc. Cybersecurity",
-        "topic": "Organization, governance and control of security",
-        "path": "academic-lineage/2022 - UniMi - M.sc. Cybersecurity - Tesi in Organizzazione, Gestione e Controllo della Sicurezza.pdf",
-        "blob_sha": "783667705671e7274f0fee5b9b4e8d215b966655"
-      },
-      {
-        "id": "TH-2025",
-        "year": 2025,
-        "institution": "UniUd",
-        "qualification": "Pg.Dip. Philosophy of AI & Information",
-        "topic": "Reticular Local Abstraction and epistemic convolutions (RLA-ECNN)",
-        "path": "academic-lineage/2025 - UniUd - Pg.Dip. Filosofia AI & Informazioni - Tesi in Modello Concettuale delle Rete Locali di Astrazione .pdf",
-        "blob_sha": "7aa056bc5d50a6c62ce77debd8b04e8813db7e7e"
-      }
+  "engineering_method_profile": {
+    "status": "PROGRAMME_LEVEL_DESCRIPTIVE_PROFILE",
+    "repository_local_method_remains_authoritative": true,
+    "sequence": [
+      "exact AS-IS",
+      "gap/debt and authority/evidence boundary derivation",
+      "minimum coherent semantic slice",
+      "revision and exact source/blob binding where required",
+      "runtime implementation",
+      "repository-local tests/oracles/receipts/readback",
+      "semantic/state/authority falsification",
+      "additional no-novelty tail",
+      "merge and exact AS-IS re-derivation"
     ],
-    "relations": [
-      {
-        "from": "TH-2025",
-        "to": "ROA",
-        "type": "SUBSEQUENT_FRAMEWORK",
-        "strength": "PROGRAMMATIC"
-      }
-    ]
+    "mutation_scale_policy": "Risk-adjusted and repository-local; scale alone is never sufficient evidence.",
+    "saturation_policy": "A bounded modeled saturation claim requires no new material failure class/signature in an additional declared tail. Late novelty invalidates saturation and requires repair, escalation or model/taxonomy revision.",
+    "compression_extension": "Where transformation/compression is optimized, a separate tail may test for no materially better valid compression.",
+    "claim_boundary": "Modelled saturation does not substitute for executable, runtime, physical, external or scientific proof required by a claim."
   },
   "governance": {
     "shared_invariant": [
@@ -170,13 +141,16 @@
       "decision != execution",
       "execution != observed-world truth",
       "receipt != external validation",
-      "implementation != scientific proof"
+      "implementation != scientific proof",
+      "modelled saturation != runtime/physical/external proof"
     ],
     "claim_boundary": {
       "programme_membership_implies_formal_derivation": false,
       "programme_membership_implies_conformance": false,
       "programme_membership_implies_empirical_validation": false,
-      "programme_membership_implies_production_readiness": false
+      "programme_membership_implies_production_readiness": false,
+      "academic_archive_implies_roa_lineage": false,
+      "modelled_saturation_implies_external_validation": false
     },
     "membership_header": {
       "version": 1,

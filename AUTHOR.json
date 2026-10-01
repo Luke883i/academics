@@ -1,0 +1,66 @@
+{
+  "schema": "academics-author-context/v1",
+  "repository": "Luke883i/academics",
+  "scope": "Minimal author and academic-archive context for the public programme entrypoint. This file is not scientific authority for ROA.",
+  "author": {
+    "name": "Gianluca Conte",
+    "profile": "GRC, audit, information security and ethical-AI practitioner with multidisciplinary academic training and independent research activity.",
+    "selected_current_context": [
+      "Founder, A-OSP (since 2025)",
+      "Head of IT Audit & Compliance, Bocconi University and SDA Business School (since 2021)"
+    ]
+  },
+  "academic_record": {
+    "boundary": "These artifacts document the author's academic trajectory. Co-location, chronology or authorship does not make them lineage, derivation, validation or evidence of the ROA Research Programme.",
+    "historical_directory": "academic-lineage",
+    "items": [
+      {
+        "id": "TH-2009",
+        "year": 2009,
+        "institution": "UniPi",
+        "qualification": "M.Sc. Applied Mathematics for Economics",
+        "topic": "Game theory in social negotiations",
+        "path": "academic-lineage/2009 - UniPi - M.sc. Matematica Applicata Economia - Tesi in Teoria dei Giochi in Negoziazioni Sociali.pdf",
+        "blob_sha": "b263a67194b2e0f502a2acdea72cbc9ceca05fe2"
+      },
+      {
+        "id": "TH-2011",
+        "year": 2011,
+        "institution": "UniPi",
+        "qualification": "M.Sc. Audit & Corporate Criminal Law",
+        "topic": "Corruption-risk management",
+        "path": "academic-lineage/2011 - UniPi - M.sc. Audit & Diritto Penale di Impresa - Tesi in Gestione del Rischio Corruzione.pdf",
+        "blob_sha": "995aad80d8933791b074e3c7c09535822cdccb63"
+      },
+      {
+        "id": "TH-2022",
+        "year": 2022,
+        "institution": "UniMi",
+        "qualification": "M.Sc. Cybersecurity",
+        "topic": "Organization, governance and control of security",
+        "path": "academic-lineage/2022 - UniMi - M.sc. Cybersecurity - Tesi in Organizzazione, Gestione e Controllo della Sicurezza.pdf",
+        "blob_sha": "783667705671e7274f0fee5b9b4e8d215b966655"
+      },
+      {
+        "id": "TH-2025",
+        "year": 2025,
+        "institution": "UniUd",
+        "qualification": "Pg.Dip. Philosophy of AI & Information",
+        "topic": "Reticular Local Abstraction and epistemic convolutions (RLA-ECNN)",
+        "path": "academic-lineage/2025 - UniUd - Pg.Dip. Filosofia AI & Informazioni - Tesi in Modello Concettuale delle Rete Locali di Astrazione .pdf",
+        "blob_sha": "7aa056bc5d50a6c62ce77debd8b04e8813db7e7e"
+      }
+    ]
+  },
+  "independent_research": {
+    "programmes": [
+      {
+        "id": "PRG-ROA",
+        "name": "ROA Research Programme",
+        "registry": "PROGRAMME.json",
+        "relation": "AUTHOR_INITIATED_RESEARCH_PROGRAMME",
+        "boundary": "Author relation establishes provenance/coordination, not scientific validation."
+      }
+    ]
+  }
+}
