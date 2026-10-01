@@ -1,0 +1,168 @@
+{
+  "baseline_main_sha": "5182e84ff87594b334bb4e256581511206ba61ef",
+  "candidate_blobs": {
+    "AUTHOR.json": {
+      "bytes": 2962,
+      "git_blob_sha1": "d522115c8d0a66c4d0eb770067aa472cd0983ebb",
+      "sha256": "e5d34cc47ae77689a6b239aab89ddd2c98923af9087f5020aec702a736a6224f"
+    },
+    "PROGRAMME.json": {
+      "bytes": 6523,
+      "git_blob_sha1": "61e2151b02e9c1198b780cf7beb99e00ab2178f2",
+      "sha256": "283e451343495fa27f3c6868a9cbf15c87a98f2d68a02fac9b91ce6e6d2660a0"
+    },
+    "PROGRAMME_HEADER_CONTRACT.md": {
+      "bytes": 595,
+      "git_blob_sha1": "6dce6a2cef9e10708ed900c0163ee801d7767baf",
+      "sha256": "2ffcb70a91a343802f1bdc36f69954b8d72ece9183bc7db108f111a5b356d157"
+    },
+    "README.md": {
+      "bytes": 11472,
+      "git_blob_sha1": "53021cbca60e5d6f15e0b16e2b885624456eb563",
+      "sha256": "dc8b5e63af2a2ebd5ac358523008951ef13a64ec946b7ce75a758be207b236dd"
+    },
+    "academic-lineage/README.md": {
+      "bytes": 676,
+      "git_blob_sha1": "a54296c77d3200eba6ebe3b961c7f70e0658085c",
+      "sha256": "36ee9cf0a4ca8fa2a0680e3f313e38ad41f8fa64f4d10d3792dfc9b23f2b1608"
+    },
+    "programme/METHOD.md": {
+      "bytes": 5832,
+      "git_blob_sha1": "a3f2249a47e61e728e89d1cf413e55cd66a76482",
+      "sha256": "f4ec7d376290731820b9555ce4274d7faa446fb782960cd3ef295be12c6bf995"
+    },
+    "scripts/falsify_hub_semantics.py": {
+      "bytes": 10921,
+      "git_blob_sha1": "f2afcd798e5c95b0344fe90caf5494e8e629e301",
+      "sha256": "d5174dbb54562db9b4b6804187e2a0d30b96b9f6d6051be64bd16f25e1177916"
+    }
+  },
+  "candidate_contract_failures": [],
+  "claim_boundary": "Synthetic deterministic semantic-access evidence only; not an empirical user study, usability/accessibility proof, production validation, scientific validation, or evidence that 100,000 real visitors would understand the hub.",
+  "generated_at": "2026-10-01",
+  "lossless_semantic_inventory": {
+    "intentional_semantic_corrections": [
+      "Theses move from programme academic_lineage to AUTHOR.json academic_record.",
+      "The historical academic-lineage path is retained but declassified as ROA lineage.",
+      "Generic PROGRAMME_BRANCH labels are refined while explicit directional relations are preserved.",
+      "The engineering method is added as a descriptive programme profile; local method/evidence remain authoritative."
+    ],
+    "missing": [],
+    "pass": true,
+    "units_checked": 37
+  },
+  "method": "100,000 deterministic heterogeneous synthetic visitor profiles + 10,000 adversarial no-novelty tail + 12 semantic ablations + legacy semantic inventory; model evidence only",
+  "pass": true,
+  "primary": {
+    "failed": 0,
+    "failure_classes": {},
+    "passed": 100000,
+    "profile_axes": [
+      "role",
+      "budget",
+      "mode",
+      "prior",
+      "misconception",
+      "variant"
+    ],
+    "profiles": 100000,
+    "role_families": 10
+  },
+  "schema": "academics-hub-semantic-falsification/v1",
+  "semantic_ablation": {
+    "details": {
+      "drop_blob": {
+        "detected": [
+          "BLOB"
+        ],
+        "killed": true
+      },
+      "drop_evidence": {
+        "detected": [
+          "EVIDENCE"
+        ],
+        "killed": true
+      },
+      "drop_how": {
+        "detected": [
+          "HOW"
+        ],
+        "killed": true
+      },
+      "drop_hub": {
+        "detected": [
+          "WHAT"
+        ],
+        "killed": true
+      },
+      "drop_local_authority": {
+        "detected": [
+          "LOCAL_AUTHORITY"
+        ],
+        "killed": true
+      },
+      "drop_no_novelty": {
+        "detected": [
+          "HOW"
+        ],
+        "killed": true
+      },
+      "drop_teddy": {
+        "detected": [
+          "MAP"
+        ],
+        "killed": true
+      },
+      "drop_why": {
+        "detected": [
+          "WHY"
+        ],
+        "killed": true
+      },
+      "launder_theses": {
+        "detected": [
+          "ARCHIVE"
+        ],
+        "killed": true
+      },
+      "promote_aosp": {
+        "detected": [
+          "AOSP_WITNESS"
+        ],
+        "killed": true
+      },
+      "promote_saturation": {
+        "detected": [
+          "NOT_PROOF"
+        ],
+        "killed": true
+      },
+      "weaken_anchor": {
+        "detected": [
+          "WHAT"
+        ],
+        "killed": true
+      }
+    },
+    "killed": 12,
+    "mutants": 12,
+    "survivors": []
+  },
+  "tail": {
+    "failed": 0,
+    "failure_classes": {},
+    "no_novelty": true,
+    "novel_failure_classes_vs_primary": [],
+    "passed": 10000,
+    "profile_axes": [
+      "role",
+      "budget",
+      "mode",
+      "prior",
+      "misconception",
+      "variant"
+    ],
+    "profiles": 10000,
+    "role_families": 10
+  }
+}
