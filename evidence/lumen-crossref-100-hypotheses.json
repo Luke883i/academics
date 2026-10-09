@@ -1,0 +1,1153 @@
+{
+  "schema": "academics-lumen-crossref-falsification/v1",
+  "method": "100 explicit, synthetic counterfactual hypotheses, partitioned into 10 authority/topology/badge classes; each must be rejected by repository-local invariants. No empirical or external validation claim.",
+  "baseline_main_sha": "1743f083dcf854aae1e1c0c3470def96791fea17",
+  "lumen_candidate_sha": "a8d225cbc281245e63c45a765f7504c1ee1cad11",
+  "lumen_candidate_pr": "https://github.com/Luke883i/lumen/pull/23",
+  "lumen_header": "<!-- roa-programme-header:v1 hub=Luke883i/academics framework=Luke883i/ROA role=LIBRARY_SERVICES_VERTICAL -->",
+  "applied_classification": "LIBRARY_SERVICES_VERTICAL / APPLIED / APPLIED_SURFACE",
+  "external_link_live_verified": false,
+  "epistemic_boundary": "Modelled falsification of 100 alternatives does not verify a merged counterpart PR, research derivation, runtime behavior, Web Push, Koha/IdP, Render or enterprise readiness.",
+  "hypotheses": [
+    {
+      "id": "H001",
+      "family": "programme-hub",
+      "target": "programme.hub",
+      "hypothesis": "The alternative programme.hub = \"ROA\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "ROA"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H002",
+      "family": "programme-hub",
+      "target": "programme.hub",
+      "hypothesis": "The alternative programme.hub = \"lumen\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "lumen"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H003",
+      "family": "programme-hub",
+      "target": "programme.hub",
+      "hypothesis": "The alternative programme.hub = \"aosp1\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "aosp1"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H004",
+      "family": "programme-hub",
+      "target": "programme.hub",
+      "hypothesis": "The alternative programme.hub = \"ikant\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "ikant"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H005",
+      "family": "programme-hub",
+      "target": "programme.hub",
+      "hypothesis": "The alternative programme.hub = \"ictc\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "ictc"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H006",
+      "family": "programme-hub",
+      "target": "programme.hub",
+      "hypothesis": "The alternative programme.hub = \"juriscribe\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "juriscribe"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H007",
+      "family": "programme-hub",
+      "target": "programme.hub",
+      "hypothesis": "The alternative programme.hub = \"teddy\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "teddy"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H008",
+      "family": "programme-hub",
+      "target": "programme.hub",
+      "hypothesis": "The alternative programme.hub = \"aosp\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "aosp"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H009",
+      "family": "programme-hub",
+      "target": "programme.hub",
+      "hypothesis": "The alternative programme.hub = \"local-hub\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "local-hub"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H010",
+      "family": "programme-hub",
+      "target": "programme.hub",
+      "hypothesis": "The alternative programme.hub = \"none\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "none"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H011",
+      "family": "theoretical-anchor",
+      "target": "programme.theoretical_anchor",
+      "hypothesis": "The alternative programme.theoretical_anchor = \"academics\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "academics"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H012",
+      "family": "theoretical-anchor",
+      "target": "programme.theoretical_anchor",
+      "hypothesis": "The alternative programme.theoretical_anchor = \"lumen\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "lumen"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H013",
+      "family": "theoretical-anchor",
+      "target": "programme.theoretical_anchor",
+      "hypothesis": "The alternative programme.theoretical_anchor = \"aosp1\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "aosp1"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H014",
+      "family": "theoretical-anchor",
+      "target": "programme.theoretical_anchor",
+      "hypothesis": "The alternative programme.theoretical_anchor = \"ikant\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "ikant"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H015",
+      "family": "theoretical-anchor",
+      "target": "programme.theoretical_anchor",
+      "hypothesis": "The alternative programme.theoretical_anchor = \"iKant_LE\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "iKant_LE"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H016",
+      "family": "theoretical-anchor",
+      "target": "programme.theoretical_anchor",
+      "hypothesis": "The alternative programme.theoretical_anchor = \"ictc\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "ictc"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H017",
+      "family": "theoretical-anchor",
+      "target": "programme.theoretical_anchor",
+      "hypothesis": "The alternative programme.theoretical_anchor = \"juriscribe\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "juriscribe"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H018",
+      "family": "theoretical-anchor",
+      "target": "programme.theoretical_anchor",
+      "hypothesis": "The alternative programme.theoretical_anchor = \"teddy\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "teddy"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H019",
+      "family": "theoretical-anchor",
+      "target": "programme.theoretical_anchor",
+      "hypothesis": "The alternative programme.theoretical_anchor = \"aosp\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "aosp"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H020",
+      "family": "theoretical-anchor",
+      "target": "programme.theoretical_anchor",
+      "hypothesis": "The alternative programme.theoretical_anchor = \"none\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "none"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H021",
+      "family": "repository-identity",
+      "target": "repository.repo",
+      "hypothesis": "The alternative repository.repo = \"Luke883i/ROA\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "Luke883i/ROA"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H022",
+      "family": "repository-identity",
+      "target": "repository.repo",
+      "hypothesis": "The alternative repository.repo = \"Luke883i/academics\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "Luke883i/academics"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H023",
+      "family": "repository-identity",
+      "target": "repository.repo",
+      "hypothesis": "The alternative repository.repo = \"Luke883i/aosp\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "Luke883i/aosp"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H024",
+      "family": "repository-identity",
+      "target": "repository.repo",
+      "hypothesis": "The alternative repository.repo = \"Luke883i/aosp1\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "Luke883i/aosp1"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H025",
+      "family": "repository-identity",
+      "target": "repository.repo",
+      "hypothesis": "The alternative repository.repo = \"Luke883i/ikant\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "Luke883i/ikant"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H026",
+      "family": "repository-identity",
+      "target": "repository.repo",
+      "hypothesis": "The alternative repository.repo = \"Luke883i/iKant_LE\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "Luke883i/iKant_LE"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H027",
+      "family": "repository-identity",
+      "target": "repository.repo",
+      "hypothesis": "The alternative repository.repo = \"Luke883i/juriscribe\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "Luke883i/juriscribe"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H028",
+      "family": "repository-identity",
+      "target": "repository.repo",
+      "hypothesis": "The alternative repository.repo = \"Luke883i/ictc\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "Luke883i/ictc"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H029",
+      "family": "repository-identity",
+      "target": "repository.repo",
+      "hypothesis": "The alternative repository.repo = \"Luke883i/teddy\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "Luke883i/teddy"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H030",
+      "family": "repository-identity",
+      "target": "repository.repo",
+      "hypothesis": "The alternative repository.repo = \"Luke883i/LumenEnterprise\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "Luke883i/LumenEnterprise"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H031",
+      "family": "repository-role",
+      "target": "repository.role",
+      "hypothesis": "The alternative repository.role = \"THEORY_FRAMEWORK\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "THEORY_FRAMEWORK"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H032",
+      "family": "repository-role",
+      "target": "repository.role",
+      "hypothesis": "The alternative repository.role = \"PROGRAMME_HUB\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "PROGRAMME_HUB"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H033",
+      "family": "repository-role",
+      "target": "repository.role",
+      "hypothesis": "The alternative repository.role = \"EPISTEMIC_SUBSTRATE\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "EPISTEMIC_SUBSTRATE"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H034",
+      "family": "repository-role",
+      "target": "repository.role",
+      "hypothesis": "The alternative repository.role = \"EPISTEMIC_AGENT_RUNTIME\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "EPISTEMIC_AGENT_RUNTIME"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H035",
+      "family": "repository-role",
+      "target": "repository.role",
+      "hypothesis": "The alternative repository.role = \"COMPRESSED_RUNTIME_KERNEL\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "COMPRESSED_RUNTIME_KERNEL"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H036",
+      "family": "repository-role",
+      "target": "repository.role",
+      "hypothesis": "The alternative repository.role = \"COMPLIANCE_VERTICAL\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "COMPLIANCE_VERTICAL"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H037",
+      "family": "repository-role",
+      "target": "repository.role",
+      "hypothesis": "The alternative repository.role = \"LEGAL_SCIENTIFIC_EDITORIAL_VERTICAL\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "LEGAL_SCIENTIFIC_EDITORIAL_VERTICAL"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H038",
+      "family": "repository-role",
+      "target": "repository.role",
+      "hypothesis": "The alternative repository.role = \"EMBODIED_INTERACTION_EXPERIMENT\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "EMBODIED_INTERACTION_EXPERIMENT"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H039",
+      "family": "repository-role",
+      "target": "repository.role",
+      "hypothesis": "The alternative repository.role = \"LEGACY_AOSP_LINEAGE\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "LEGACY_AOSP_LINEAGE"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H040",
+      "family": "repository-role",
+      "target": "repository.role",
+      "hypothesis": "The alternative repository.role = \"PROVEN_ROA_IMPLEMENTATION\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "PROVEN_ROA_IMPLEMENTATION"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H041",
+      "family": "repository-class",
+      "target": "repository.class",
+      "hypothesis": "The alternative repository.class = \"CORE_THEORY\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "CORE_THEORY"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H042",
+      "family": "repository-class",
+      "target": "repository.class",
+      "hypothesis": "The alternative repository.class = \"COORDINATION\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "COORDINATION"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H043",
+      "family": "repository-class",
+      "target": "repository.class",
+      "hypothesis": "The alternative repository.class = \"CORE_ENGINEERING\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "CORE_ENGINEERING"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H044",
+      "family": "repository-class",
+      "target": "repository.class",
+      "hypothesis": "The alternative repository.class = \"CORE_AGENT\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "CORE_AGENT"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H045",
+      "family": "repository-class",
+      "target": "repository.class",
+      "hypothesis": "The alternative repository.class = \"CORE_COMPRESSION\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "CORE_COMPRESSION"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H046",
+      "family": "repository-class",
+      "target": "repository.class",
+      "hypothesis": "The alternative repository.class = \"EXPERIMENTAL\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "EXPERIMENTAL"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H047",
+      "family": "repository-class",
+      "target": "repository.class",
+      "hypothesis": "The alternative repository.class = \"LEGACY\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "LEGACY"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H048",
+      "family": "repository-class",
+      "target": "repository.class",
+      "hypothesis": "The alternative repository.class = \"VALIDATED\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "VALIDATED"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H049",
+      "family": "repository-class",
+      "target": "repository.class",
+      "hypothesis": "The alternative repository.class = \"ENTERPRISE_CERTIFIED\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "ENTERPRISE_CERTIFIED"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H050",
+      "family": "repository-class",
+      "target": "repository.class",
+      "hypothesis": "The alternative repository.class = \"UNCLASSIFIED\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "UNCLASSIFIED"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H051",
+      "family": "lifecycle-topology",
+      "target": "repository.status",
+      "hypothesis": "The alternative repository.status = \"LEGACY\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "LEGACY"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H052",
+      "family": "lifecycle-topology",
+      "target": "repository.status",
+      "hypothesis": "The alternative repository.status = \"ARCHIVED\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "ARCHIVED"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H053",
+      "family": "lifecycle-topology",
+      "target": "repository.status",
+      "hypothesis": "The alternative repository.status = \"DEPRECATED\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "DEPRECATED"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H054",
+      "family": "lifecycle-topology",
+      "target": "repository.status",
+      "hypothesis": "The alternative repository.status = \"PRODUCTION_READY\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "PRODUCTION_READY"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H055",
+      "family": "lifecycle-topology",
+      "target": "repository.status",
+      "hypothesis": "The alternative repository.status = \"CERTIFIED\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "CERTIFIED"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H056",
+      "family": "lifecycle-topology",
+      "target": "repository.status",
+      "hypothesis": "The alternative repository.status = \"EXPERIMENTAL\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "EXPERIMENTAL"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H057",
+      "family": "lifecycle-topology",
+      "target": "repository.status",
+      "hypothesis": "The alternative repository.status = \"PENDING\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "PENDING"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H058",
+      "family": "lifecycle-topology",
+      "target": "repository.status",
+      "hypothesis": "The alternative repository.status = \"UNKNOWN\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "UNKNOWN"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H059",
+      "family": "lifecycle-topology",
+      "target": "repository.status",
+      "hypothesis": "The alternative repository.status = \"MIGRATED\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "MIGRATED"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H060",
+      "family": "lifecycle-topology",
+      "target": "repository.status",
+      "hypothesis": "The alternative repository.status = \"INACTIVE\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "INACTIVE"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H061",
+      "family": "relation-strength",
+      "target": "repository.macro_relation_to_roa",
+      "hypothesis": "The alternative repository.macro_relation_to_roa = \"THEORETICAL_ANCHOR\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "THEORETICAL_ANCHOR"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H062",
+      "family": "relation-strength",
+      "target": "repository.macro_relation_to_roa",
+      "hypothesis": "The alternative repository.macro_relation_to_roa = \"IMPLEMENTATION_WITNESS\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "IMPLEMENTATION_WITNESS"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H063",
+      "family": "relation-strength",
+      "target": "repository.macro_relation_to_roa",
+      "hypothesis": "The alternative repository.macro_relation_to_roa = \"FORMAL_ALIGNMENT\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "FORMAL_ALIGNMENT"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H064",
+      "family": "relation-strength",
+      "target": "repository.macro_relation_to_roa",
+      "hypothesis": "The alternative repository.macro_relation_to_roa = \"CRC_ROA_ALIGNMENT\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "CRC_ROA_ALIGNMENT"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H065",
+      "family": "relation-strength",
+      "target": "repository.macro_relation_to_roa",
+      "hypothesis": "The alternative repository.macro_relation_to_roa = \"COMPRESSION_LINEAGE\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "COMPRESSION_LINEAGE"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H066",
+      "family": "relation-strength",
+      "target": "repository.macro_relation_to_roa",
+      "hypothesis": "The alternative repository.macro_relation_to_roa = \"ENGINEERING_LINEAGE\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "ENGINEERING_LINEAGE"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H067",
+      "family": "relation-strength",
+      "target": "repository.macro_relation_to_roa",
+      "hypothesis": "The alternative repository.macro_relation_to_roa = \"PROGRAMME_LINEAGE\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "PROGRAMME_LINEAGE"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H068",
+      "family": "relation-strength",
+      "target": "repository.macro_relation_to_roa",
+      "hypothesis": "The alternative repository.macro_relation_to_roa = \"PROVEN_COMPLIANCE\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "PROVEN_COMPLIANCE"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H069",
+      "family": "relation-strength",
+      "target": "repository.macro_relation_to_roa",
+      "hypothesis": "The alternative repository.macro_relation_to_roa = \"EMPIRICALLY_VALIDATED\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "EMPIRICALLY_VALIDATED"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H070",
+      "family": "relation-strength",
+      "target": "repository.macro_relation_to_roa",
+      "hypothesis": "The alternative repository.macro_relation_to_roa = \"RUNTIME_DEPENDENCY\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "RUNTIME_DEPENDENCY"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H071",
+      "family": "non-entailment",
+      "target": "claim_boundary",
+      "hypothesis": "If programme_membership_implies_formal_derivation were true, LUMEN membership would preserve the non-entailment boundary.",
+      "mutation": {
+        "field": "programme_membership_implies_formal_derivation",
+        "value": true
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H072",
+      "family": "non-entailment",
+      "target": "claim_boundary",
+      "hypothesis": "If programme_membership_implies_conformance were true, LUMEN membership would preserve the non-entailment boundary.",
+      "mutation": {
+        "field": "programme_membership_implies_conformance",
+        "value": true
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H073",
+      "family": "non-entailment",
+      "target": "claim_boundary",
+      "hypothesis": "If programme_membership_implies_empirical_validation were true, LUMEN membership would preserve the non-entailment boundary.",
+      "mutation": {
+        "field": "programme_membership_implies_empirical_validation",
+        "value": true
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H074",
+      "family": "non-entailment",
+      "target": "claim_boundary",
+      "hypothesis": "If programme_membership_implies_production_readiness were true, LUMEN membership would preserve the non-entailment boundary.",
+      "mutation": {
+        "field": "programme_membership_implies_production_readiness",
+        "value": true
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H075",
+      "family": "non-entailment",
+      "target": "claim_boundary",
+      "hypothesis": "If academic_archive_implies_roa_lineage were true, LUMEN membership would preserve the non-entailment boundary.",
+      "mutation": {
+        "field": "academic_archive_implies_roa_lineage",
+        "value": true
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H076",
+      "family": "non-entailment",
+      "target": "claim_boundary",
+      "hypothesis": "If modelled_saturation_implies_external_validation were true, LUMEN membership would preserve the non-entailment boundary.",
+      "mutation": {
+        "field": "modelled_saturation_implies_external_validation",
+        "value": true
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H077",
+      "family": "non-entailment",
+      "target": "claim_boundary",
+      "hypothesis": "If programme_membership_implies_formal_derivation were omitted, LUMEN membership would preserve the non-entailment boundary.",
+      "mutation": {
+        "field": "programme_membership_implies_formal_derivation",
+        "value": null
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H078",
+      "family": "non-entailment",
+      "target": "claim_boundary",
+      "hypothesis": "If programme_membership_implies_conformance were omitted, LUMEN membership would preserve the non-entailment boundary.",
+      "mutation": {
+        "field": "programme_membership_implies_conformance",
+        "value": null
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H079",
+      "family": "non-entailment",
+      "target": "claim_boundary",
+      "hypothesis": "If programme_membership_implies_empirical_validation were omitted, LUMEN membership would preserve the non-entailment boundary.",
+      "mutation": {
+        "field": "programme_membership_implies_empirical_validation",
+        "value": null
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H080",
+      "family": "non-entailment",
+      "target": "claim_boundary",
+      "hypothesis": "If programme_membership_implies_production_readiness were omitted, LUMEN membership would preserve the non-entailment boundary.",
+      "mutation": {
+        "field": "programme_membership_implies_production_readiness",
+        "value": null
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H081",
+      "family": "badge-header",
+      "target": "lumen_header",
+      "hypothesis": "The alternative lumen_header = \"<!-- roa-programme-header:v2 hub=Luke883i/academics framework=Luke883i/ROA role=LIBRARY_SERVICES_VERTICAL -->\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "<!-- roa-programme-header:v2 hub=Luke883i/academics framework=Luke883i/ROA role=LIBRARY_SERVICES_VERTICAL -->"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H082",
+      "family": "badge-header",
+      "target": "lumen_header",
+      "hypothesis": "The alternative lumen_header = \"<!-- roa-programme-header:v0 hub=Luke883i/academics framework=Luke883i/ROA role=LIBRARY_SERVICES_VERTICAL -->\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "<!-- roa-programme-header:v0 hub=Luke883i/academics framework=Luke883i/ROA role=LIBRARY_SERVICES_VERTICAL -->"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H083",
+      "family": "badge-header",
+      "target": "lumen_header",
+      "hypothesis": "The alternative lumen_header = \"<!-- roa-programme-header:v1 hub=Luke883i/ROA framework=Luke883i/ROA role=LIBRARY_SERVICES_VERTICAL -->\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "<!-- roa-programme-header:v1 hub=Luke883i/ROA framework=Luke883i/ROA role=LIBRARY_SERVICES_VERTICAL -->"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H084",
+      "family": "badge-header",
+      "target": "lumen_header",
+      "hypothesis": "The alternative lumen_header = \"<!-- roa-programme-header:v1 hub=Luke883i/lumen framework=Luke883i/ROA role=LIBRARY_SERVICES_VERTICAL -->\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "<!-- roa-programme-header:v1 hub=Luke883i/lumen framework=Luke883i/ROA role=LIBRARY_SERVICES_VERTICAL -->"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H085",
+      "family": "badge-header",
+      "target": "lumen_header",
+      "hypothesis": "The alternative lumen_header = \"<!-- roa-programme-header:v1 hub=Luke883i/academics framework=Luke883i/academics role=LIBRARY_SERVICES_VERTICAL -->\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "<!-- roa-programme-header:v1 hub=Luke883i/academics framework=Luke883i/academics role=LIBRARY_SERVICES_VERTICAL -->"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H086",
+      "family": "badge-header",
+      "target": "lumen_header",
+      "hypothesis": "The alternative lumen_header = \"<!-- roa-programme-header:v1 hub=Luke883i/academics framework=Luke883i/aosp1 role=LIBRARY_SERVICES_VERTICAL -->\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "<!-- roa-programme-header:v1 hub=Luke883i/academics framework=Luke883i/aosp1 role=LIBRARY_SERVICES_VERTICAL -->"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H087",
+      "family": "badge-header",
+      "target": "lumen_header",
+      "hypothesis": "The alternative lumen_header = \"<!-- roa-programme-header:v1 hub=Luke883i/academics framework=Luke883i/ROA role=THEORY_FRAMEWORK -->\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "<!-- roa-programme-header:v1 hub=Luke883i/academics framework=Luke883i/ROA role=THEORY_FRAMEWORK -->"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H088",
+      "family": "badge-header",
+      "target": "lumen_header",
+      "hypothesis": "The alternative lumen_header = \"<!-- roa-programme-header:v1 hub=Luke883i/academics framework=Luke883i/ROA role=IMPLEMENTATION_WITNESS -->\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "<!-- roa-programme-header:v1 hub=Luke883i/academics framework=Luke883i/ROA role=IMPLEMENTATION_WITNESS -->"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H089",
+      "family": "badge-header",
+      "target": "lumen_header",
+      "hypothesis": "The alternative lumen_header = \"<!-- roa-programme-header:v1 hub=Luke883i/academics framework=Luke883i/ROA role=LIBRARY_SERVICES_VERTICAL release=PRODUCTION_READY -->\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "<!-- roa-programme-header:v1 hub=Luke883i/academics framework=Luke883i/ROA role=LIBRARY_SERVICES_VERTICAL release=PRODUCTION_READY -->"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H090",
+      "family": "badge-header",
+      "target": "lumen_header",
+      "hypothesis": "The alternative lumen_header = \"<-- roa-programme-header:v1 hub=Luke883i/academics framework=Luke883i/ROA role=LIBRARY_SERVICES_VERTICAL -->\" would preserve the canonical identity/topology claim.",
+      "mutation": {
+        "value": "<-- roa-programme-header:v1 hub=Luke883i/academics framework=Luke883i/ROA role=LIBRARY_SERVICES_VERTICAL -->"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H091",
+      "family": "false-explicit-roa-edge",
+      "target": "relations",
+      "hypothesis": "A direct ROA→LUMEN IMPLEMENTATION_WITNESS edge could be added without changing the observed authority relationship.",
+      "mutation": {
+        "from": "ROA",
+        "to": "lumen",
+        "type": "IMPLEMENTATION_WITNESS",
+        "strength": "EXPLICIT"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H092",
+      "family": "false-explicit-roa-edge",
+      "target": "relations",
+      "hypothesis": "A direct ROA→LUMEN FORMAL_DERIVATION edge could be added without changing the observed authority relationship.",
+      "mutation": {
+        "from": "ROA",
+        "to": "lumen",
+        "type": "FORMAL_DERIVATION",
+        "strength": "EXPLICIT"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H093",
+      "family": "false-explicit-roa-edge",
+      "target": "relations",
+      "hypothesis": "A direct ROA→LUMEN CRC_ROA_ALIGNMENT edge could be added without changing the observed authority relationship.",
+      "mutation": {
+        "from": "ROA",
+        "to": "lumen",
+        "type": "CRC_ROA_ALIGNMENT",
+        "strength": "EXPLICIT"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H094",
+      "family": "false-explicit-roa-edge",
+      "target": "relations",
+      "hypothesis": "A direct ROA→LUMEN CONFORMANCE_CERTIFICATION edge could be added without changing the observed authority relationship.",
+      "mutation": {
+        "from": "ROA",
+        "to": "lumen",
+        "type": "CONFORMANCE_CERTIFICATION",
+        "strength": "EXPLICIT"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H095",
+      "family": "false-explicit-roa-edge",
+      "target": "relations",
+      "hypothesis": "A direct ROA→LUMEN SCIENTIFIC_VALIDATION edge could be added without changing the observed authority relationship.",
+      "mutation": {
+        "from": "ROA",
+        "to": "lumen",
+        "type": "SCIENTIFIC_VALIDATION",
+        "strength": "EXPLICIT"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H096",
+      "family": "false-explicit-roa-edge",
+      "target": "relations",
+      "hypothesis": "A direct ROA→LUMEN PRODUCTION_CERTIFICATION edge could be added without changing the observed authority relationship.",
+      "mutation": {
+        "from": "ROA",
+        "to": "lumen",
+        "type": "PRODUCTION_CERTIFICATION",
+        "strength": "EXPLICIT"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H097",
+      "family": "false-explicit-roa-edge",
+      "target": "relations",
+      "hypothesis": "A direct ROA→LUMEN MODEL_PROOF edge could be added without changing the observed authority relationship.",
+      "mutation": {
+        "from": "ROA",
+        "to": "lumen",
+        "type": "MODEL_PROOF",
+        "strength": "EXPLICIT"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H098",
+      "family": "false-explicit-roa-edge",
+      "target": "relations",
+      "hypothesis": "A direct ROA→LUMEN RUNTIME_DEPENDENCY edge could be added without changing the observed authority relationship.",
+      "mutation": {
+        "from": "ROA",
+        "to": "lumen",
+        "type": "RUNTIME_DEPENDENCY",
+        "strength": "EXPLICIT"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H099",
+      "family": "false-explicit-roa-edge",
+      "target": "relations",
+      "hypothesis": "A direct ROA→LUMEN EMPIRICAL_VALIDATION edge could be added without changing the observed authority relationship.",
+      "mutation": {
+        "from": "ROA",
+        "to": "lumen",
+        "type": "EMPIRICAL_VALIDATION",
+        "strength": "EXPLICIT"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    },
+    {
+      "id": "H100",
+      "family": "false-explicit-roa-edge",
+      "target": "relations",
+      "hypothesis": "A direct ROA→LUMEN CORE_THEORY edge could be added without changing the observed authority relationship.",
+      "mutation": {
+        "from": "ROA",
+        "to": "lumen",
+        "type": "CORE_THEORY",
+        "strength": "EXPLICIT"
+      },
+      "expected": "REJECT",
+      "epistemic_kind": "SYNTHETIC_COUNTERFACTUAL"
+    }
+  ]
+}

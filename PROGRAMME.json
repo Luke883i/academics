@@ -71,6 +71,14 @@
       "macro_relation_to_roa": "APPLIED_SURFACE"
     },
     {
+      "id": "lumen",
+      "repo": "Luke883i/lumen",
+      "role": "LIBRARY_SERVICES_VERTICAL",
+      "class": "APPLIED",
+      "status": "CURRENT",
+      "macro_relation_to_roa": "APPLIED_SURFACE"
+    },
+    {
       "id": "teddy",
       "repo": "Luke883i/teddy",
       "role": "EMBODIED_INTERACTION_EXPERIMENT",

@@ -33,6 +33,7 @@ flowchart TB
     LE["iKant_LE<br/>compressed runtime kernel"]
     ICTC["ICTC<br/>compliance knowledge-governance"]
     JUR["Juriscribe<br/>legal / scientific / editorial"]
+    LUMEN["LUMEN<br/>library services PWA"]
     TED["Teddy<br/>embodied / local interaction"]
     LEG["aosp<br/>legacy engineering predecessor"]
     AUTHOR["author context + academic archive"]
@@ -43,6 +44,7 @@ flowchart TB
     IK -->|compression lineage| LE
     HUB -->|applied surface| ICTC
     HUB -->|applied surface| JUR
+    HUB -->|applied surface| LUMEN
     HUB -->|experimental surface| TED
     LEG -->|engineering lineage| AOSP
     AUTHOR -. authorship/context; not ROA lineage .-> HUB
@@ -61,8 +63,11 @@ The programme is deliberately federated. ROA is not the programme itself, A-OSP 
 | [`iKant_LE`](https://github.com/Luke883i/iKant_LE) | Compressed constitutional runtime kernel | Compression lineage from iKant; programme component |
 | [`ICTC`](https://github.com/Luke883i/ictc) | Compliance knowledge-governance system | Applied programme surface |
 | [`Juriscribe`](https://github.com/Luke883i/juriscribe) | Legal/scientific/editorial research system | Applied programme surface |
+| [`LUMEN`](https://github.com/Luke883i/lumen) | Library-services web application for students, faculty and librarians | Applied programme surface; local catalogue, optional Koha/OIDC and PWA, not a ROA implementation witness |
 | [`Teddy`](https://github.com/Luke883i/teddy) | Embodied/local interaction experiment | Experimental programme surface |
 | [`aosp`](https://github.com/Luke883i/aosp) | Historical A-OSP engineering repository | Engineering predecessor to A-OSP |
+
+LUMEN is classified as an **applied library-services surface**, not as a theoretical derivation, a CRC/ROA conformance implementation or evidence that its Koha integration, enterprise ILS capacity or live Render deployment have been certified. Its local contracts and release evidence remain authoritative in the LUMEN repository.
 
 The canonical machine-readable registry is [`PROGRAMME.json`](PROGRAMME.json). Repository-local contracts and evidence remain authoritative for each member's current implementation, runtime, release and governance state.
 
