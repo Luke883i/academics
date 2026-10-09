@@ -5,6 +5,7 @@ on:
       - 'PROGRAMME.json'
       - 'README.md'
       - 'evidence/lumen-crossref-100-hypotheses.json'
+      - 'evidence/hub-semantic-falsification-v1.json'
       - 'scripts/check_lumen_constellation.py'
       - '.github/workflows/lumen-constellation.yml'
   pull_request:
@@ -12,6 +13,7 @@ on:
       - 'PROGRAMME.json'
       - 'README.md'
       - 'evidence/lumen-crossref-100-hypotheses.json'
+      - 'evidence/hub-semantic-falsification-v1.json'
       - 'scripts/check_lumen_constellation.py'
       - '.github/workflows/lumen-constellation.yml'
 permissions:
