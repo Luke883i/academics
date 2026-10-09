@@ -1,0 +1,23 @@
+name: R4 one-time hub receipt regeneration
+on:
+  push:
+    branches: [docs/lumen-roa-constellation-registry]
+    paths:
+      - '.github/workflows/regenerate-lumen-hub.yml'
+permissions:
+  contents: read
+  pull-requests: write
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Recompute original bound source receipt
+        run: python3 scripts/falsify_hub_semantics.py --out /tmp/roa-hub-candidate-receipt.json
+      - name: Publish to PR 4 for exact Git tree commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          { echo 'ROA_HUB_RECEIPT_BEGIN'; cat /tmp/roa-hub-candidate-receipt.json; echo 'ROA_HUB_RECEIPT_END'; } > /tmp/roa-hub-candidate-comment.txt
+          gh pr comment 4 --body-file /tmp/roa-hub-candidate-comment.txt
