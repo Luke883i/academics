@@ -1,0 +1,28 @@
+name: ROA Constellation Membership
+on:
+  push:
+    paths:
+      - 'PROGRAMME.json'
+      - 'README.md'
+      - 'evidence/lumen-crossref-100-hypotheses.json'
+      - 'scripts/check_lumen_constellation.py'
+      - '.github/workflows/lumen-constellation.yml'
+  pull_request:
+    paths:
+      - 'PROGRAMME.json'
+      - 'README.md'
+      - 'evidence/lumen-crossref-100-hypotheses.json'
+      - 'scripts/check_lumen_constellation.py'
+      - '.github/workflows/lumen-constellation.yml'
+permissions:
+  contents: read
+jobs:
+  semantic-membership:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Falsify 100 semantic alternatives
+        run: python3 scripts/check_lumen_constellation.py
+      - name: Verify existing hub-receipt source binding
+        run: python3 scripts/falsify_hub_semantics.py --check
