@@ -21,7 +21,7 @@ jobs:
           set -euo pipefail
           temp="$(mktemp -d)"
           trap 'git worktree remove --force "$temp" >/dev/null 2>&1 || true' EXIT
-          git worktree add --detach "$temp" 5182e84ff87594b334bb4e256581511206ba61ef
+          git worktree add --detach "$temp" bf3b757bb1df2e3f19df7874fb2b9b34e46a41cc
           ( cd "$temp" && python3 scripts/check_lumen_constellation.py && python3 scripts/falsify_hub_semantics.py --check )
       - name: Validate new public nine-repository v2 and negative mutants
         run: python3 scripts/check_programme_v2.py
