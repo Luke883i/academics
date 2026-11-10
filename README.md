@@ -1,184 +1,49 @@
-[![ROA Research Programme](https://img.shields.io/badge/ROA-Research_Programme-1f6feb)](https://github.com/Luke883i/academics)
-[![Programme Role](https://img.shields.io/badge/role-PROGRAMME_HUB-6f42c1)](https://github.com/Luke883i/academics#repository-map)
+<!-- programme-header:v2 -->
+> **ROA Research Programme · A-OSP ecosystem** — [Author & programme hub](https://github.com/Luke883i/academics) · [ROA theory](https://github.com/Luke883i/ROA) · [CORA assurance](https://github.com/Luke883i/cora). Every repository is independently readable. Membership does not imply formal derivation, shared runtime, scientific validation, certification, or production readiness. Repository-local code, evidence, and governance remain authoritative.
 
-<!-- roa-programme-header:v1 hub=Luke883i/academics framework=Luke883i/ROA role=PROGRAMME_HUB -->
+# Gianluca Conte — Research, Engineering & Academic Archive
 
-# ROA Research Programme
+A standalone public profile, historical academic archive, and entrypoint to independent research and engineering projects. I work across GRC, audit, cybersecurity and responsible AI. The [author record](AUTHOR.json) identifies my work as Founder of A-OSP (since 2025) and Head of IT Audit & Compliance at Bocconi University and SDA Business School (since 2021); these are author-maintained statements, not independently verified credentials.
 
-**Computational Epistemics, Semantic Architectures & Governable AI Systems**
+## Academic trajectory and original theses
 
-`academics` is the public entrypoint and coordination hub for the ROA Research Programme. ROA is the theoretical anchor; the surrounding repositories implement, align with, compress, apply, stress or historically precede parts of the programme without becoming proof of the theory.
+| Year | Study | Thesis topic |
+| --- | --- | --- |
+| 2009 | University of Pisa — Applied Mathematics for Economics | Game theory in social negotiations |
+| 2011 | University of Pisa — Audit & Corporate Criminal Law | Corruption-risk management |
+| 2022 | University of Milan — Cybersecurity | Security organization, governance and control |
+| 2025 | University of Udine — Philosophy of AI & Information | Reticular local abstraction and epistemic convolutions |
 
-## At a glance: what, why, how
+[Read the four original thesis PDFs](academic-lineage/) · [Author record and file identities](AUTHOR.json). These works document my academic history; they do **not** independently validate the ROA research programme.
 
-| Question | Short answer |
-|---|---|
-| **What is this?** | A coordinated research programme on computational epistemics and governable AI systems. `academics` is its map and programme hub; [`ROA`](https://github.com/Luke883i/ROA) is its theoretical anchor; the constellation contains distinct engineering, agent, applied and experimental surfaces. |
-| **Why does it exist?** | To make AI-assisted knowledge and action reconstructable without silently turning representation into reality, model output into evidence, evidence into authority, decision into execution, or execution into observed-world truth. |
-| **How does it evolve?** | Repositories repeatedly derive the exact AS-IS, identify gap/debt and authority boundaries, implement a minimum semantic slice, bind the candidate to an exact revision and - where required - exact Git blob/content digests, execute repository-local oracles, falsify the declared boundary through semantic/state/authority mutations, require an additional no-novelty tail for bounded saturation, then merge and re-derive the new AS-IS. |
-| **What is it not?** | Programme membership is not scientific proof or production readiness; modelled saturation is not runtime, physical or external validation; the academic archive is the author's record, not ROA lineage; this hub does not override repository-local authority. |
+## ROA and the A-OSP ecosystem, without prerequisites
 
-## Research question
+**ROA (Reticular Observer Architectures)** is theoretical research on bounded observers, semantic representations and epistemic governance. Its central distinction is that model, evidence, permission, decision, execution and observed reality are not interchangeable. It is a critical and falsifiable research corpus, not a completed proof or a production certification.
 
-> How can AI systems compute, represent, persist and govern semantic and epistemic state within declared horizons while keeping evidence, inference, authority, decision, execution and observed-world truth distinguishable and reconstructable?
+**A-OSP (Augmented Ontological-Semantic Platforms)** denotes a broader ecosystem of independently scoped research, software and experiments addressing traceable representations, controlled AI-assisted action and inspectable evidence. **Reading ROA is not necessary to use CORA or any application below.** A relationship to the programme is not proof of technical integration.
 
-## Programme architecture
+The shared development approach is: reconstruct the exact AS-IS; specify an observable outcome; derive non-compensatory acceptance conditions; implement a small coherent change; inspect real behavior and adversarial counterexamples; bind evidence to a Git revision; retain uncertainty; review and iterate. Simulated mutation volume never substitutes for real-world tests.
 
-```mermaid
-flowchart TB
-    HUB["academics<br/>programme entrypoint + coordination"]
-    ROA["ROA<br/>theoretical / formal framework"]
-    AOSP["A-OSP<br/>epistemic substrate"]
-    IK["iKant<br/>governed epistemic-agent runtime"]
-    LE["iKant_LE<br/>compressed runtime kernel"]
-    ICTC["ICTC<br/>compliance knowledge-governance"]
-    JUR["Juriscribe<br/>legal / scientific / editorial"]
-    LUMEN["LUMEN<br/>library services PWA"]
-    TED["Teddy<br/>embodied / local interaction"]
-    LEG["aosp<br/>legacy engineering predecessor"]
-    AUTHOR["author context + academic archive"]
+## Choose what to read — the nine public repositories
 
-    HUB --> ROA
-    ROA -->|implementation witness| AOSP
-    ROA -->|explicit CRC/ROA alignment| IK
-    IK -->|compression lineage| LE
-    HUB -->|applied surface| ICTC
-    HUB -->|applied surface| JUR
-    HUB -->|applied surface| LUMEN
-    HUB -->|experimental surface| TED
-    LEG -->|engineering lineage| AOSP
-    AUTHOR -. authorship/context; not ROA lineage .-> HUB
-```
+| Repository | What you will find | Starting point |
+| --- | --- | --- |
+| [academics](https://github.com/Luke883i/academics) | This author CV, thesis archive and programme map | This page |
+| [ROA](https://github.com/Luke883i/ROA) | Theory and reference corpus | Theoretical README and main paper |
+| [CORA](https://github.com/Luke883i/cora) | Tools and methods for AI coding assistants to develop, audit and repair software with falsifiable evidence | CLI quickstart; One-Run |
+| [ICTC](https://github.com/Luke883i/ictc) | Applied compliance knowledge governance | Product boundaries and local demo |
+| [Juriscribe](https://github.com/Luke883i/juriscribe) | **Closed and unmaintained**, unreliable experimental research tool | Historical methods only; do not rely on outputs |
+| [iKant_EDU](https://github.com/Luke883i/iKant_EDU) | Experimental deterministic meta-controller around a replaceable model | Runtime architecture and admission requirements |
+| [LUMEN](https://github.com/Luke883i/lumen) | Essential standalone library-service implementation | Pilot and Codespaces |
+| [Teddy](https://github.com/Luke883i/teddy) | Conversational character and experiment in mutation-guided, bounded-saturation AI-assisted engineering | Chat prototype and test model |
+| [NILO](https://github.com/Luke883i/NILO) | 2D game and sequential, integrated multi-abstraction engineering experiment | Playable levels and local start |
 
-The programme is deliberately federated. ROA is not the programme itself, A-OSP is not the theory, iKant is not the substrate, and applied surfaces do not become formal derivations merely by being members of the same research programme.
+Some historical or engineering components of A-OSP are not public. The [programme registry](PROGRAMME.json) also records private and historical lineage, which is not a public access path.
 
-## Repository map
+## How to interpret engineering claims
 
-| Repository | Programme role | Relation |
-|---|---|---|
-| [`academics`](https://github.com/Luke883i/academics) | Programme entrypoint and coordination hub | Identity, topology and shared claim boundaries |
-| [`ROA`](https://github.com/Luke883i/ROA) | Theoretical / formal framework | Theoretical anchor |
-| [`A-OSP`](https://github.com/Luke883i/aosp1) | Epistemic substrate | Explicit implementation witness |
-| [`iKant`](https://github.com/Luke883i/ikant) | Governed epistemic-agent runtime | Explicit CRC/ROA alignment |
-| [`iKant_LE`](https://github.com/Luke883i/iKant_LE) | Compressed constitutional runtime kernel | Compression lineage from iKant; programme component |
-| [`ICTC`](https://github.com/Luke883i/ictc) | Compliance knowledge-governance system | Applied programme surface |
-| [`Juriscribe`](https://github.com/Luke883i/juriscribe) | Legal/scientific/editorial research system | Applied programme surface |
-| [`LUMEN`](https://github.com/Luke883i/lumen) | Library-services web application for students, faculty and librarians | Applied programme surface; local catalogue, optional Koha/OIDC and PWA, not a ROA implementation witness |
-| [`Teddy`](https://github.com/Luke883i/teddy) | Embodied/local interaction experiment | Experimental programme surface |
-| [`aosp`](https://github.com/Luke883i/aosp) | Historical A-OSP engineering repository | Engineering predecessor to A-OSP |
+**Product, source and repository are distinct.** Source tests, modelled falsifications, browser simulations, actual deployment, independent user acceptance and human authorization are different evidence levels. [CORA's qualitative maturity rubric](https://github.com/Luke883i/cora/blob/main/docs/CORA_SCORE.md) defines two independent proposed 1–5 assessment axes: development assurance and remediation assurance. Scores are not automatic CLI outputs and require assessor, Git SHA, evidence and blockers to become measured assessments.
 
-LUMEN is classified as an **applied library-services surface**, not as a theoretical derivation, a CRC/ROA conformance implementation or evidence that its Koha integration, enterprise ILS capacity or live Render deployment have been certified. Its local contracts and release evidence remain authoritative in the LUMEN repository.
+## Documentation and authority
 
-The canonical machine-readable registry is [`PROGRAMME.json`](PROGRAMME.json). Repository-local contracts and evidence remain authoritative for each member's current implementation, runtime, release and governance state.
-
-## Shared epistemic boundary
-
-Across the programme, repository-specific implementations preserve variants of one anti-laundering discipline:
-
-```text
-representation      != reality
-model output        != evidence
-evidence            != permission
-permission          != decision
-decision            != execution
-execution           != observed-world truth
-receipt              != external validation
-implementation       != scientific proof
-modelled saturation != runtime / physical / external proof
-```
-
-These are claim boundaries, not slogans: crossing from one layer to another requires whatever additional evidence or authority the repository-local contract declares.
-
-## Development method: bounded semantic slices
-
-A recurring engineering pattern across ROA-associated repositories is development by bounded semantic slices rather than undifferentiated feature accumulation.
-
-```mermaid
-flowchart LR
-    I["intent / target"] --> A["exact AS-IS"]
-    A --> G["gap + debt + authority/evidence boundary"]
-    G --> S["minimum coherent semantic slice"]
-    S --> B["revision + exact source/blob binding where required"]
-    B --> R["runtime implementation"]
-    R --> O["tests + oracles + receipts + readback"]
-    O --> M["semantic / state / authority mutation campaign"]
-    M --> N{"new material failure class in tail?"}
-    N -->|yes| X["not saturated: repair / escalate / remodel"]
-    X --> G
-    N -->|no| SAT["local modelled saturation"]
-    SAT --> P["PR / merge"]
-    P --> A2["reload exact AS-IS and re-derive"]
-    A2 --> G
-```
-
-A **minimum semantic slice** is the smallest coherent change that closes or contains a demonstrated semantic, authority, evidence, runtime or governance gap while minimizing unrelated surface expansion. The next slice is re-derived from canonical state after each result; a previous roadmap is a falsifiable hypothesis, not permanent authority.
-
-Where the repository's evidence model requires source identity, the candidate is bound to an exact revision and Git blob or content digest. Blob binding proves which bytes the evidence concerns; it does not by itself prove that those bytes are correct.
-
-Mutation campaigns target the declared contract: semantic distinctions, state transitions, authorization relaxations, evidence paths, governance boundaries, failure handling or combinations of these. Scale is risk-adjusted and repository-local. Some programme components use governed ladders such as `1k -> 100k -> 1M -> 10M`, but a large count is never sufficient by itself.
-
-### Saturation by no-novelty
-
-After the primary campaign has exercised the known modeled fault space, an additional independent tail asks whether a **new material failure class or signature** still appears.
-
-```text
-known modeled classes exercised
-            |
-            v
-additional independent tail
-            |
-            v
-new material class/signature?
-        /             \
-      yes              no
-       |                |
-       v                v
-not saturated     bounded modeled saturation
-repair/escalate   for the declared model only
-or remodel
-```
-
-A new example of an existing equivalence class need not reset saturation. Material novelty is structural: for example a new canonical owner, dependency, supported boundary, failure path, evidence obligation, rollback domain, human gate, root class or signature. If novelty survives the maximum governed campaign, the fault taxonomy or model must be revised; it is not permission to claim saturation.
-
-For transformation/compression work, a second tail may test whether a materially better valid compression remains. In all cases, modeled saturation is bounded evidence about the declared model. It never substitutes for executable, runtime, physical, external or scientific validation required by the claim.
-
-See [`programme/METHOD.md`](programme/METHOD.md) for the compact method contract and representative repository evidence.
-
-## Evidence progression
-
-```mermaid
-flowchart LR
-    D["design / model"] --> C["candidate implementation"]
-    C --> E["executable checks"]
-    E --> F["falsification evidence"]
-    F --> S["modelled saturation"]
-    S --> R["repository-local runtime evidence"]
-    R --> W["observed-world / external evidence"]
-    D -. does not imply .-> W
-    F -. does not imply .-> W
-    S -. does not imply .-> W
-```
-
-No programme-level diagram can upgrade a repository-local claim. Evidence progression is valid only where the local contract establishes the bridge.
-
-## Hub authority
-
-`academics` owns programme identity, membership topology, directional cross-repository relations, shared claim boundaries and this programme-level method profile.
-
-It is a map and coordination surface, not a super-runtime. Current runtime, release, implementation, test, evidence and governance state always resolves to the member repository that owns it.
-
-## Author context and academic archive
-
-This repository originally began as an archive of university theses and still preserves those PDFs. They document the author's academic trajectory across applied mathematics/economics, audit and control, cybersecurity, and philosophy of AI and information.
-
-The historical directory name [`academic-lineage/`](academic-lineage/) is retained to avoid breaking existing Git history and links. It must not be read as lineage of the ROA Research Programme. The authoritative author/archive metadata is separated into [`AUTHOR.json`](AUTHOR.json); the programme registry no longer treats the theses as programme lineage.
-
-This separation is intentional: shared authorship, chronology or professional context can explain provenance and perspective, but they do not create scientific derivation or validation.
-
-## Semantic falsification of this hub
-
-The refactoring of this entrypoint is accompanied by a deterministic **synthetic semantic-access falsification**, not an empirical user study.
-
-The harness in [`scripts/falsify_hub_semantics.py`](scripts/falsify_hub_semantics.py) exercises 100,000 heterogeneous hypothetical visitor profiles against the hub's `what / why / how` contract, then runs an additional no-novelty tail and semantic ablation mutants. The receipt is committed in [`evidence/hub-semantic-falsification-v1.json`](evidence/hub-semantic-falsification-v1.json) and is bound to the exact candidate Git blobs.
-
-Its claim is intentionally narrow: the information architecture survives the declared synthetic comprehension model and its mutations. It does not prove how real visitors will understand the repository.
+[PROGRAMME.json](PROGRAMME.json) describes membership and relationships; [programme method](programme/METHOD.md) describes the common pattern; [AUTHOR.json](AUTHOR.json) owns author and archive metadata. Each linked repository owns its own current code, releases, evidence and governance. Start with the project that interests you, not with the whole theoretical corpus.

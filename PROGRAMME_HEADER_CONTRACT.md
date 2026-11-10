@@ -1,9 +1,7 @@
-# ROA Programme Header Contract
+# Programme Header Contract — v2
 
-The authoritative programme-header contract is `governance.membership_header` in [`PROGRAMME.json`](PROGRAMME.json).
+The canonical shared header is an exact byte-identical block, beginning with `<!-- programme-header:v2 -->`, at the start of every public repository README. It links the author/coordination hub, ROA theory and CORA methods, and expressly denies implied derivation, shared runtime, scientific validation, certification and production readiness. Local repository source and governance retain authority.
 
-This file is a compatibility pointer only and carries no independent authority. The current shared marker remains `roa-programme-header:v1` for `CURRENT` programme repositories; legacy lineage nodes may remain headerless.
+`PROGRAMME.json` owns membership and relationships; `scripts/check_programme_v2.py` checks nine public routes and adversarial source-model cases. The original `roa-programme-header:v1` remains a **historical schema**, not the current public README header. The historical v1 CI evidence is reproduced at its original Git revision, not replayed against the rewritten v2 information architecture.
 
-The header expresses programme topology only. It does not encode author identity, academic-record lineage, runtime state, scientific proof or production readiness.
-
-Programme membership is topology, not scientific proof.
+The common header is **not** a release badge, CV credential verification or assertion that ROA theory must be understood before using an application.

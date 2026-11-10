@@ -47,14 +47,6 @@
       "macro_relation_strength": "EXPLICIT"
     },
     {
-      "id": "iKant_LE",
-      "repo": "Luke883i/iKant_LE",
-      "role": "COMPRESSED_RUNTIME_KERNEL",
-      "class": "CORE_COMPRESSION",
-      "status": "CURRENT",
-      "macro_relation_to_roa": "PROGRAMME_COMPONENT"
-    },
-    {
       "id": "ictc",
       "repo": "Luke883i/ictc",
       "role": "COMPLIANCE_VERTICAL",
@@ -68,7 +60,9 @@
       "role": "LEGAL_SCIENTIFIC_EDITORIAL_VERTICAL",
       "class": "APPLIED",
       "status": "CURRENT",
-      "macro_relation_to_roa": "APPLIED_SURFACE"
+      "macro_relation_to_roa": "APPLIED_SURFACE",
+      "maintenance": "CLOSED_UNMAINTAINED",
+      "operational_claim": "HISTORICAL_EXPERIMENT_ONLY"
     },
     {
       "id": "lumen",
@@ -93,6 +87,30 @@
       "class": "LEGACY",
       "status": "LEGACY",
       "macro_relation_to_roa": "PROGRAMME_LINEAGE"
+    },
+    {
+      "id": "iKant_EDU",
+      "repo": "Luke883i/iKant_EDU",
+      "role": "DETERMINISTIC_META_CONTROLLER_EXPERIMENT",
+      "class": "CORE_AGENT_EXPERIMENT",
+      "status": "CURRENT",
+      "macro_relation_to_roa": "PROGRAMME_COMPONENT"
+    },
+    {
+      "id": "cora",
+      "repo": "Luke883i/cora",
+      "role": "ENGINEERING_ASSURANCE_TOOLSET",
+      "class": "CROSS_CUTTING_METHOD",
+      "status": "CURRENT",
+      "macro_relation_to_roa": "METHODOLOGICAL_NEIGHBOUR"
+    },
+    {
+      "id": "NILO",
+      "repo": "Luke883i/NILO",
+      "role": "SEQUENTIAL_MULTI_ABSTRACTION_EXPERIMENT",
+      "class": "EXPERIMENTAL",
+      "status": "CURRENT",
+      "macro_relation_to_roa": "EXPERIMENTAL_SURFACE"
     }
   ],
   "relations": [
@@ -107,12 +125,6 @@
       "to": "ikant",
       "type": "CRC_ROA_ALIGNMENT",
       "strength": "EXPLICIT"
-    },
-    {
-      "from": "ikant",
-      "to": "iKant_LE",
-      "type": "COMPRESSION_LINEAGE",
-      "strength": "PROGRAMMATIC"
     },
     {
       "from": "aosp",
@@ -161,8 +173,8 @@
       "modelled_saturation_implies_external_validation": false
     },
     "membership_header": {
-      "version": 1,
-      "marker": "roa-programme-header:v1",
+      "version": 2,
+      "marker": "programme-header:v2",
       "required_semantics": [
         "canonical programme identity",
         "programme hub",
