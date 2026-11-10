@@ -1,9 +1,9 @@
 <!-- programme-header:v2 -->
-> **ROA Research Programme · A-OSP ecosystem** — [Author & programme hub](https://github.com/Luke883i/academics) · [ROA theory](https://github.com/Luke883i/ROA) · [CORA assurance](https://github.com/Luke883i/cora). Every repository is independently readable. Membership does not imply formal derivation, shared runtime, scientific validation, certification, or production readiness. Repository-local code, evidence, and governance remain authoritative.
+> **ROA Research Programme · AOSP ecosystem** — [Author & programme hub](https://github.com/Luke883i/academics) · [ROA theory](https://github.com/Luke883i/ROA) · [CORA assurance](https://github.com/Luke883i/cora). Every repository is independently readable. Membership does not imply formal derivation, shared runtime, scientific validation, certification, or production readiness. Repository-local code, evidence, and governance remain authoritative.
 
-# Gianluca Conte — Research, Engineering & Academic Archive
+# Research, Engineering & Academic Archive
 
-A standalone public profile, historical academic archive, and entrypoint to independent research and engineering projects. I work across GRC, audit, cybersecurity and responsible AI. The [author record](AUTHOR.json) identifies my work as Founder of A-OSP (since 2025) and Head of IT Audit & Compliance at Bocconi University and SDA Business School (since 2021); these are author-maintained statements, not independently verified credentials.
+Historical academic archive, and entrypoint to independent research and engineering projects. I work across GRC, audit, cybersecurity and responsible AI. The [author record](AUTHOR.json) identifies my work as Founder of A-OSP (since 2025) and Head of IT Audit & Compliance at Bocconi University and SDA Business School (since 2021); these are author-maintained statements, not independently verified credentials.
 
 ## Academic trajectory and original theses
 
