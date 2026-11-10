@@ -24,7 +24,7 @@ Historical academic archive, and entrypoint to independent research and engineer
 
 The shared development approach is: reconstruct the exact AS-IS; specify an observable outcome; derive non-compensatory acceptance conditions; implement a small coherent change; inspect real behavior and adversarial counterexamples; bind evidence to a Git revision; retain uncertainty; review and iterate. Simulated mutation volume never substitutes for real-world tests.
 
-## Choose what to read — the nine public repositories
+## Choose what to read — public repositories
 
 | Repository | What you will find | Starting point |
 | --- | --- | --- |
