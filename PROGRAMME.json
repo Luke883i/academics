@@ -60,7 +60,9 @@
       "role": "LEGAL_SCIENTIFIC_EDITORIAL_VERTICAL",
       "class": "APPLIED",
       "status": "CURRENT",
-      "macro_relation_to_roa": "APPLIED_SURFACE"
+      "macro_relation_to_roa": "APPLIED_SURFACE",
+      "maintenance": "CLOSED_UNMAINTAINED",
+      "operational_claim": "HISTORICAL_EXPERIMENT_ONLY"
     },
     {
       "id": "lumen",
