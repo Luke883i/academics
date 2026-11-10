@@ -42,7 +42,7 @@ Some historical or engineering components of A-OSP are not public. The [programm
 
 ## How to interpret engineering claims
 
-**Product, source and repository are distinct.** Source tests, modelled falsifications, browser simulations, actual deployment, independent user acceptance and human authorization are different evidence levels. [CORA's qualitative maturity rubric](https://github.com/Luke883i/cora/blob/main/docs/CORA_SCORE.md) defines two independent proposed 1–5 assessment axes: development assurance and remediation assurance. Scores are not automatic CLI outputs and require assessor, Git SHA, evidence and blockers to become measured assessments.
+**Product, source and repository are distinct.** Source tests, modelled falsifications, browser simulations, actual deployment, independent user acceptance and human authorization are different evidence levels. [CORA's qualitative maturity rubric](https://github.com/Luke883i/cora#cora-score--indicative-assurance-bands-not-a-product-certification) defines two independent proposed 1–5 assessment axes: development assurance and remediation assurance. Scores are not automatic CLI outputs and require assessor, Git SHA, evidence and blockers to become measured assessments.
 
 ## Documentation and authority
 
