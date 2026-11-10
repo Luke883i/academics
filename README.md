@@ -16,11 +16,11 @@ Historical academic archive, and entrypoint to independent research and engineer
 
 [Read the four original thesis PDFs](academic-lineage/) · [Author record and file identities](AUTHOR.json). These works document my academic history; they do **not** independently validate the ROA research programme.
 
-## ROA and the A-OSP ecosystem, without prerequisites
+## ROA and the AOSP ecosystem, without prerequisites
 
 **ROA (Reticular Observer Architectures)** is theoretical research on bounded observers, semantic representations and epistemic governance. Its central distinction is that model, evidence, permission, decision, execution and observed reality are not interchangeable. It is a critical and falsifiable research corpus, not a completed proof or a production certification.
 
-**A-OSP (Augmented Ontological-Semantic Platforms)** denotes a broader ecosystem of independently scoped research, software and experiments addressing traceable representations, controlled AI-assisted action and inspectable evidence. **Reading ROA is not necessary to use CORA or any application below.** A relationship to the programme is not proof of technical integration.
+**AOSP (Augmented Ontological-Semantic Platforms)** denotes a broader ecosystem of independently scoped research, software and experiments addressing traceable representations, controlled AI-assisted action and inspectable evidence. **Reading ROA is not necessary to use CORA or any application below.** A relationship to the programme is not proof of technical integration.
 
 The shared development approach is: reconstruct the exact AS-IS; specify an observable outcome; derive non-compensatory acceptance conditions; implement a small coherent change; inspect real behavior and adversarial counterexamples; bind evidence to a Git revision; retain uncertainty; review and iterate. Simulated mutation volume never substitutes for real-world tests.
 
