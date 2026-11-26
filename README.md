@@ -26,135 +26,73 @@ These original PDFs document the author's academic trajectory; they do not prove
 
 The objective is practical: make AI-assisted work useful while retaining sources, authority boundaries, known gaps and the evidence required to justify decisions. Potential applications include financial and internal audit, risk and compliance, professional services, enterprise knowledge management and education. These are prospective markets, not claims of professional certification or autonomous audit judgement.
 
+**Programme trajectory:** ROA frames the theory of bounded observation; AOSP explores engineering implementations; CORA is its experimental witness for traceable software development. Cognitive research, a future operating environment and applied prototypes test different limits. No single deployed platform or runtime is implied.
+
 ## CORA — flagship experimental witness
 
-**[CORA — Continuous Ontological Repository Assurance](https://github.com/Luke883i/cora)** is AOSP's **flagship experimental engineering product**: an agent-agnostic method, plus an optional local Python assurance engine, for guiding AI coding agents from a human outcome to inspectable engineering evidence. It does not itself write features, run merely because a prompt was pasted, approve changes or certify an application.
+**[CORA — Continuous Ontological Repository Assurance](https://github.com/Luke883i/cora)** is AOSP's flagship experimental method and optional Python 3.11+ assurance engine. It helps coordinate **replaceable AI coding agents**, not replace the coding agent, execute code from a prompt or authorize deployment.
 
-### The problem in everyday language
+**For non-engineers:** suppose you ask AI to make a customer-reporting app. The Save button appears, but does the report survive restarting the server? Can a different customer close it? Which exact version was tested? CORA starts from these observable outcomes instead of a list of fashionable features.
 
-Suppose someone asks an AI: *“Make an app where a customer reports a problem, can find the report tomorrow, and cannot close somebody else's case.”* The AI may quickly draw a convincing screen. But did it save the information? Does it survive a restart? Can the wrong person close it? Which exact version was tested?
+### Two horizontal diagrams
 
-CORA treats these as separate questions. A beginner chooses the desired result and reviews decisions; a coding agent proposes small changes; actual Git and test runners supply the evidence when available.
-
-### Diagram 1 — work backward, verify forward
-
-```mermaid
-flowchart TD
-    G["What does the person want?"] --> B["Work backward: what MUST be true?"]
-    B --> A["Write success + forbidden-case checks"]
-    A --> S["Choose one reversible change"]
-    S --> X["Authorized agent + actual runner"]
-    X --> E["Observe results and counterexamples"]
-    E --> Q{"Enough evidence for every required check?"}
-    Q -- "No: challenge plan again" --> B
-    Q -- "Yes for this scope" --> H["Human review and next decision"]
-```
-
-**Backward derivation** starts from the desired result, not from whichever feature the agent wants to code first. **Ongoing roadmap re-falsification** asks after each change whether the original plan is still justified. New failures, unknown consumers or changed requirements reopen the relevant tasks.
-
-### Diagram 2 — three distinct kinds of truth
+**From a goal to a bounded decision.** Derive acceptance evidence backward; implement and test forward. When a counterexample survives, revisit the roadmap.
 
 ```mermaid
 flowchart LR
-    P["PRODUCT: result a person needs"] -->|"requirements"| S["SOFTWARE: behaviour actually running"]
-    S -->|"versioned implementation"| R["REPOSITORY: exact code, history, tests"]
-    R -->|"source evidence, not product proof"| S
-    S -->|"runtime + user observations"| P
+    G["Human goal"] --> D["Backward DoD: required checks"]
+    D --> S["One reversible change"]
+    S --> T["Authorized tests + mutations"]
+    T --> Q{"Required evidence present?"}
+    Q -- "No: replan" --> D
+    Q -- "For this scope" --> H["Human decision"]
 ```
 
-| Layer | Example question | What would demonstrate it? |
-| --- | --- | --- |
-| **Product** | Can the customer actually recover a submitted case? | A valid user journey in the intended environment. |
-| **Software** | Is the record still there after a real process restart? | Original datastore restart and readback tests. |
-| **Repository** | Which exact implementation did we examine? | Git blobs, commit identity and revision-bound test receipts. |
-
-A green CI check and a correct Git hash are not sufficient evidence that people can use the product. Nor can a document or receipt approve its own release.
-
-### CORA's method, in practical terms
-
-1. **Backward AND-DoD:** state the outcome and derive necessary, non-compensatory checks across source, target runtime and external acceptance. Each critical check has a counterexample.
-2. **Small semantic slices:** pick the smallest change that protects behavior, data ownership, permissions, interfaces and rollback.
-3. **Blobbing / Git materialization:** bind proposed and observed code to exact Git blobs, trees and commits. A draft is not a materialized change.
-4. **Native tests and adversarial mutation:** execute target-owned positive and negative tests; deliberately introduce disposable source faults to check the checker. Keep survivors visible.
-5. **Finite saturation:** explore declared families of faults and a separately specified no-new-failure-class tail. Large simulation counts never become universal correctness.
-6. **Re-falsify the roadmap:** inspect the new HEAD, redo the requirements/dependency frontier, select the next unresolved leaf and stop on missing authority or tests.
-7. **Evidence-bound continuation:** present PASS_SCOPED, REFUTED, NOT_RUN or BLOCKED_EXTERNAL for the exact source scope, with an intelligible next choice.
-
-**For a non-specialist:** describe a goal in a ChatGPT Project, inspect the proposed checks, authorize bounded work and read the results. ChatGPT Projects (including eligible Plus and Edu accounts) are an entry point to **CORA-METHOD**, not a coding runner. Real source changes need an authorized agent; native tests and CORA-ENGINE need an approved execution environment.
-
-CORA does **not** seek superiority over well-designed engineering checklists. The experimental question is whether non-experts can coordinate rigorous engineering with AI help—possibly at substantial cost from mutations, blobbing, saturation and evidence handling. Human understanding, reduced error and economic benefit remain hypotheses to test independently.
-
-### Five concrete examples — original Git commits
-
-These examples are drawn from the [*From Intent to Evidence* research dossier](https://github.com/Luke883i/cora/tree/main/research/decision-ready-assurance). The links point to verified original Git commits and show what was changed in source. They **do not** prove CORA caused every patch, that a deployment passed, or that a user study was conducted.
-
-**1. A saved record must survive a restart — ICTC.** [Commit `80a1e71b98`](https://github.com/Luke883i/ictc/commit/80a1e71b98f63a9f5a30d4398eefaadea27ba39c) added same-SQLite process-restart invariants for seven procedures. This addresses a different question from “did clicking Save show success?” A meaningful oracle writes, restarts the actual service and reads back the same data. The commit proves the test source changed; the relevant runtime result still needs an execution receipt.
-
-**2. A valid page must not be mistaken for an attacker — Teddy.** [Commit `f04a124ac0`](https://github.com/Luke883i/teddy/commit/f04a124ac024988c1a55884be1560b156f6e574f) adjusted trusted TLS proxy origin and CSRF handling; [commit `2401716db9`](https://github.com/Luke883i/teddy/commit/2401716db9b19da2a9a4eada7b702923bcea0cb8) added an actual local/forwarded-port 403 regression reproduction. The engineering goal has two sides: let an authorized browser communicate and continue rejecting forged origins. “The chat UI loads” is not the entire security requirement.
-
-**3. An empty list must be genuinely empty — LUMEN.** [Commit `1ccb6fd0f7`](https://github.com/Luke883i/lumen/commit/1ccb6fd0f7b74832a2f5bf64e27e38704e15cb30) requires confirmed absence plus one truthful recovery action. A network failure and an empty catalogue must not generate the same misleading product message. The expected error state is part of the user-facing contract.
-
-**4. A button press must reach the game — NILO.** [Commit `32e7935fbf`](https://github.com/Luke883i/NILO/commit/32e7935fbf425c7c513c95862c019230e74d014c) preserves the physical jump latch across state boundaries and sub-tick press edges. A correct-looking event handler does not show that a player's short press survives actual frame timing. Browser and player observation remain stronger evidence than source inspection.
-
-**5. Test the test — CORA itself.** [Commit `4db17ab598`](https://github.com/Luke883i/cora/commit/4db17ab598c1bfbee823d5161c536c29818fa181) corrected physical JSON mutation inputs before replay; [commit `f98690d0b1`](https://github.com/Luke883i/cora/commit/f98690d0b19b9e40dae05ebfccb70afedaee2bbc) strengthened a checker to discriminate composite mutation survivors. A false or malformed mutant can make an assurance report misleading. The oracle needs its own negative controls.
-
-**An informative null result:** in an author-selected study, CORA's evidence model and a strong executable checklist tied on **16/16 fixed cases**. A retrospective sample of 11 PRs across five repositories recorded 92 applicable evidence obligations, with 70 *not observed in that dossier* (not 70 proven defects). Forty-four modeled briefings were generated; **no people were tested**. These numbers are a research boundary, not marketing proof of better engineering.
-
-## iKant-EDU — cognitive model, stack and runtime
-
-**iKant-EDU** is a distinct experimental **Node.js 22.13+** cognitive coordination system around a replaceable language model. It tests the *contribution* of coordinated functions—semantic analysis, epistemic limits, planning, reasoning, social context and reflective checks—not a claim of machine consciousness.
-
-**One cognitive core (`cognitiveTurn`)** coordinates the faculties; **StateVault** is the bounded state/memory writer. An optional external language provider generates fluent text, without receiving authority over the session or memory.
+**Three distinct levels.** Passing tests on a Git revision cannot, by itself, establish product acceptance.
 
 ```mermaid
 flowchart LR
-    H["Authorized host input"] --> C["One cognitive core"]
-    C --> F["Semantic / epistemic / planning faculties"]
-    C <--> V["StateVault: memory and state"]
-    C --> L["Optional language-model provider"]
-    L --> C
-    C --> O["Answer + separate diagnostics"]
+    P["PRODUCT: the user's result"] -->|"acceptance criteria"| S["SOFTWARE: observed behaviour"]
+    S -->|"exact version"| R["REPOSITORY: Git blobs, tests, history"]
+    R -. "not automatic product proof" .-> P
 ```
 
-**Actual stack:** a local Node core with native tests; **MCP stdio**, local **HTTP/demo**, a **session-chat** adapter and an opt-in **OpenAI Responses API** integration requiring credentials, network and authorization. A prompt cannot install an automatic ChatGPT→Node dispatcher. A five-arm same-model study proposes blinded utility and causal-uplift thresholds, still **BLOCKED_EXTERNAL / NOT_ATTESTED**.
+**CORA's loop:** work backward from the **global AND-Definition of Done** to necessary source, runtime and external checks; select a small semantic slice with rollback; materialize actual Git blobs, tree and commit; exercise target-native positive/negative tests; use disposable physical mutations and bounded scenario saturation to challenge the oracles; record survivors; **re-falsify the ongoing roadmap after every slice** and follow the next unresolved obligation. A large modeled mutation count is not a large number of executed product tests.
 
-**First-release target: Q1 2027**, subject to validation. The public [iKant_EDU](https://github.com/Luke883i/iKant_EDU) is a **separate research line**, not the private iKant-EDU runtime or proof of a completed release.
+**For beginners:** [CORA-METHOD](https://github.com/Luke883i/cora) can guide ChatGPT Projects (including eligible Plus and Edu plans). A Project prompt or ZIP **is not a runner**. Real writing, runtime tests and CORA-ENGINE require authorized tools, actual Git and a separate approved runner. Source evidence, runtime proof, reviewer identity and release authority remain distinct.
+
+**CORA does not seek superiority over a strong engineering checklist.** It tests whether non-experts can coordinate rigorous engineering with a replaceable coding agent, despite substantial compute and procedural cost. A purposive comparison tied **16/16 fixed cases** with a strong executable checklist; in a selected 11-PR dossier, 70 of 92 evidence obligations were not observed **in that dossier**, not diagnosed as defects. Forty-four briefings were modeled; **no people were tested**. Human comprehension, effectiveness and value for money remain unvalidated hypotheses.
+
+## iKant-EDU — cognitive research and runtime
+
+**iKant-EDU** is an experimental **Node.js ≥22.13** cognitive-coordination system. One `cognitiveTurn` core combines semantic, epistemic, planning, social and reflective faculties; **StateVault** owns bounded state and memory. A replaceable language provider supplies text, not authority.
+
+Runtime surfaces include local Node tests, **MCP stdio**, HTTP/demo and session-chat adapters, and an opt-in **OpenAI Responses API** bridge requiring credentials and permission. A ChatGPT prompt does not automatically connect the native host to Node. The proposed five-arm same-model test has not established independent utility or causal uplift.
+
+**First-release target: Q1 2027, subject to validation.** The public [iKant_EDU](https://github.com/Luke883i/iKant_EDU) is a distinct research line, **not** the private iKant-EDU runtime or a demonstrated public release.
 
 ## EVRIA — envisioned Epistemic Operating Environment
 
-**EVRIA** is a *to-be* **Epistemic Operating Environment**: an OS-like workspace in which people collect sources, query knowledge, inspect evidence, draft documents and submit consequential actions to review.
+**EVRIA** is a **to-be** epistemic operating environment: gather sources, question durable knowledge, draft evidence-aware documents and submit material actions for human review. In the target architecture, EVRIA owns the workspace, the knowledge substrate owns durable records, **iKant is the governed meta-controller** of planning/action boundaries and CORA supplies independent source assurance.
 
-```mermaid
-flowchart TD
-    U["Human: sources, questions, decisions"] --> E["EVRIA workspace"]
-    E --> K["Persistent source and knowledge authority"]
-    E <--> M["iKant: governed meta-controller"]
-    M --> P["Plans, uncertainty, permissible actions"]
-    P --> E
-    E --> H["Draft, verify, human approval"]
-    C["CORA: independent engineering assurance"] -. "source/revision evidence" .-> E
-```
-
-**Target division of responsibility:** EVRIA owns the interaction experience; the knowledge substrate owns durable records; **iKant** governs cognitive planning and action boundaries as the **meta-controller**; CORA separately assesses engineering evidence. iKant-EDU may inform research but cannot silently replace the distinct iKant runtime.
-
-**Observed limit:** EVRIA contains a local browser pilot backed by an append-only journal, not a verified integration of the original knowledge, iKant and CORA runtimes. Real identity, tenant separation, enterprise workflows and external usability remain open. EVRIA's repository is private; this overview does not grant access.
+A local browser/journal pilot exists, but there is **no verified integration** of the original component runtimes, real enterprise identity/tenant separation or external acceptance. No safe production service is claimed.
 
 ## Experimental projects that challenged CORA's method
 
-The following independently governed projects provided different **engineering problem classes** used to refine assurance questions. They are not evidence of one shared runtime or that CORA authored every commit.
+**ICTC, TEDDY, Juriscribe, NILO and LUMEN are experimental prototypes: not enterprise-ready, safe enterprise use has not been demonstrated or claimed, and no independent enterprise certification or production-security assurance is claimed.** They illustrate iterative work with **replaceable AI coding agents using CORA-METHOD**, not proof that CORA authored or executed each historical commit. **Closed and unmaintained:** Juriscribe is not suitable for legal or professional reliance.
 
-| Project | Distinct engineering lesson | Original source |
+| Prototype | A concrete boundary, not a production certificate | Original Git source |
 | --- | --- | --- |
-| [ICTC](https://github.com/Luke883i/ictc) | Persisted audit/compliance state, roles and evidence boundaries | [Restart invariants](https://github.com/Luke883i/ictc/commit/80a1e71b98f63a9f5a30d4398eefaadea27ba39c) |
-| [Teddy](https://github.com/Luke883i/teddy) | CSRF/origin boundary, valid and invalid routes | [Security fix](https://github.com/Luke883i/teddy/commit/f04a124ac024988c1a55884be1560b156f6e574f) |
-| [LUMEN](https://github.com/Luke883i/lumen) | Honest empty states, service recoverability | [Recovery UX](https://github.com/Luke883i/lumen/commit/1ccb6fd0f7b74832a2f5bf64e27e38704e15cb30) |
-| [NILO](https://github.com/Luke883i/NILO) | Interactive timing, player experience, runtime vs source | [Input latch](https://github.com/Luke883i/NILO/commit/32e7935fbf425c7c513c95862c019230e74d014c) |
-| [iKant_EDU](https://github.com/Luke883i/iKant_EDU) | AND requirements, host and runtime proof boundaries | [Outcome contract](https://github.com/Luke883i/iKant_EDU/commit/c7034b71c2efd3b03dc11921b4a55d35bf032fb0) |
-| [CORA](https://github.com/Luke883i/cora) | Mutation oracles need falsification too | [Composite survivors](https://github.com/Luke883i/cora/commit/f98690d0b19b9e40dae05ebfccb70afedaee2bbc) |
-| [Juriscribe](https://github.com/Luke883i/juriscribe) | **Closed and unmaintained** historical legal research; not suitable for operational reliance | [Historical source](https://github.com/Luke883i/juriscribe) |
+| [ICTC](https://github.com/Luke883i/ictc) | Saving is not persistence: seven procedures gained same-SQLite restart checks. | [`80a1e71b98`](https://github.com/Luke883i/ictc/commit/80a1e71b98f63a9f5a30d4398eefaadea27ba39c) |
+| [Teddy](https://github.com/Luke883i/teddy) | Trusted browser origins and CSRF denials must be distinguished from a page that loads. | [`f04a124ac0`](https://github.com/Luke883i/teddy/commit/f04a124ac024988c1a55884be1560b156f6e574f) |
+| [LUMEN](https://github.com/Luke883i/lumen) | “No results” is different from network failure; recovery must be honest. | [`1ccb6fd0f7`](https://github.com/Luke883i/lumen/commit/1ccb6fd0f7b74832a2f5bf64e27e38704e15cb30) |
+| [NILO](https://github.com/Luke883i/NILO) | A short keypress must survive game frame/state transitions. | [`32e7935fbf`](https://github.com/Luke883i/NILO/commit/32e7935fbf425c7c513c95862c019230e74d014c) |
+| [Juriscribe](https://github.com/Luke883i/juriscribe) | Archived, unmaintained historical legal-research prototype; no safe legal reliance. | [Repository history](https://github.com/Luke883i/juriscribe) |
+
+**Test the test:** [CORA `4db17ab598`](https://github.com/Luke883i/cora/commit/4db17ab598c1bfbee823d5161c536c29818fa181) repaired a physical JSON mutant harness; [`f98690d0b1`](https://github.com/Luke883i/cora/commit/f98690d0b19b9e40dae05ebfccb70afedaee2bbc) strengthened a checker against composite mutant survivors. A source commit identifies a change and its test intent, not independent production execution, AI authorship or user benefit.
 
 ## Evidence and archive
 
 [Programme registry](PROGRAMME.json) · [Original academic PDFs](theses/) · [Historical baseline](history/README.md) · [CORA research dossier](https://github.com/Luke883i/cora/tree/main/research/decision-ready-assurance)
 
-
+All repository-local architecture, verification and release decisions remain authoritative for their own product. Git identity, tests, external runtime evidence and approval are not interchangeable.
