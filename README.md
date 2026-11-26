@@ -1,49 +1,55 @@
 <!-- programme-header:v2 -->
-> **ROA Research Programme · AOSP ecosystem** — [Author & programme hub](https://github.com/Luke883i/academics) · [ROA theory](https://github.com/Luke883i/ROA) · [CORA assurance](https://github.com/Luke883i/cora). Every repository is independently readable. Membership does not imply formal derivation, shared runtime, scientific validation, certification, or production readiness. Repository-local code, evidence, and governance remain authoritative.
+> **AOSP programme** — [Hub](https://github.com/Luke883i/academics) · [ROA theory](https://github.com/Luke883i/ROA) · [CORA engineering](https://github.com/Luke883i/cora). Every repository is independently readable. Membership does not imply formal derivation, shared runtime, scientific validation, certification, or production readiness. Repository-local code, evidence, and governance remain authoritative.
 
-# Research, Engineering & Academic Archive
+# AOSP — Augmented Ontological Semantic Platforms
 
-Historical academic archive, and entrypoint to independent research and engineering projects. I work across GRC, audit, cybersecurity and responsible AI. The [author record](AUTHOR.json) identifies my work as Founder of A-OSP (since 2025) and Head of IT Audit & Compliance at Bocconi University and SDA Business School (since 2021); these are author-maintained statements, not independently verified credentials.
+Independent research and engineering programme developing usable, traceable and governable AI systems. Its projects have separate runtimes, owners, tests and release decisions.
 
-## Academic trajectory and original theses
+## Flagship — CORA
 
-| Year | Study | Thesis topic |
-| --- | --- | --- |
-| 2009 | University of Pisa — Applied Mathematics for Economics | Game theory in social negotiations |
-| 2011 | University of Pisa — Audit & Corporate Criminal Law | Corruption-risk management |
-| 2022 | University of Milan — Cybersecurity | Security organization, governance and control |
-| 2025 | University of Udine — Philosophy of AI & Information | Reticular local abstraction and epistemic convolutions |
+**[CORA](https://github.com/Luke883i/cora) (Continuous Ontological Repository Assurance)** is the programme's flagship engineering method and toolset. It helps people and AI coding agents develop software by:
 
-[Read the four original thesis PDFs](academic-lineage/) · [Author record and file identities](AUTHOR.json). These works document my academic history; they do **not** independently validate the ROA research programme.
+1. Deriving a global, evidence-based **Definition of Done** backwards from the user goal.
+2. Connecting **product** outcomes, actual **software** behaviour and **repository** code/history without treating one as proof of another.
+3. Implementing small, reversible changes bound to Git blobs and commits.
+4. Challenging code and test oracles through native tests, adversarial mutations and bounded saturation analysis.
+5. Re-falsifying the remaining roadmap after each slice and following the next unresolved requirement.
 
-## ROA and the AOSP ecosystem, without prerequisites
+CORA does not claim to outperform sound engineering checklists. It investigates whether their rigour can become usable by non-experts, even with significant verification overhead. ChatGPT Projects provide a conversational entry point; actual source changes and tests require authorized tools and runners.
 
-**ROA (Reticular Observer Architectures)** is theoretical research on bounded observers, semantic representations and epistemic governance. Its central distinction is that model, evidence, permission, decision, execution and observed reality are not interchangeable. It is a critical and falsifiable research corpus, not a completed proof or a production certification.
+## Cognitive research — iKant-EDU
 
-**AOSP (Augmented Ontological-Semantic Platforms)** denotes a broader ecosystem of independently scoped research, software and experiments addressing traceable representations, controlled AI-assisted action and inspectable evidence. **Reading ROA is not necessary to use CORA or any application below.** A relationship to the programme is not proof of technical integration.
+**iKant-EDU** investigates coordination of reasoning, memory, epistemic controls and session behaviour around language models. **First-release target: Q1 2027**, subject to validation. The separate public [iKant_EDU research repository](https://github.com/Luke883i/iKant_EDU) is not evidence that the targeted release already exists.
 
-The shared development approach is: reconstruct the exact AS-IS; specify an observable outcome; derive non-compensatory acceptance conditions; implement a small coherent change; inspect real behavior and adversarial counterexamples; bind evidence to a Git revision; retain uncertainty; review and iterate. Simulated mutation volume never substitutes for real-world tests.
+## Foundations and applications
 
-## Choose what to read — public repositories
+**[ROA](https://github.com/Luke883i/ROA) (Reticular Observer Architectures)** provides the theoretical research on bounded observation, knowledge representation and epistemic accountability.
 
-| Repository | What you will find | Starting point |
-| --- | --- | --- |
-| [academics](https://github.com/Luke883i/academics) | This author CV, thesis archive and programme map | This page |
-| [ROA](https://github.com/Luke883i/ROA) | Theory and reference corpus | Theoretical README and main paper |
-| [CORA](https://github.com/Luke883i/cora) | Tools and methods for AI coding assistants to develop, audit and repair software with falsifiable evidence | CLI quickstart; One-Run |
-| [ICTC](https://github.com/Luke883i/ictc) | Applied compliance knowledge governance | Product boundaries and local demo |
-| [Juriscribe](https://github.com/Luke883i/juriscribe) | **Closed and unmaintained**, unreliable experimental research tool | Historical methods only; do not rely on outputs |
-| [iKant_EDU](https://github.com/Luke883i/iKant_EDU) | Experimental deterministic meta-controller around a replaceable model | Runtime architecture and admission requirements |
-| [LUMEN](https://github.com/Luke883i/lumen) | Essential standalone library-service implementation | Pilot and Codespaces |
-| [Teddy](https://github.com/Luke883i/teddy) | Conversational character and experiment in mutation-guided, bounded-saturation AI-assisted engineering | Chat prototype and test model |
-| [NILO](https://github.com/Luke883i/NILO) | 2D game and sequential, integrated multi-abstraction engineering experiment | Playable levels and local start |
+| Public project | Focus |
+| --- | --- |
+| [ICTC](https://github.com/Luke883i/ictc) | Compliance and governance workflows |
+| [LUMEN](https://github.com/Luke883i/lumen) | Library services |
+| [Teddy](https://github.com/Luke883i/teddy) | Local conversational AI |
+| [NILO](https://github.com/Luke883i/NILO) | Interactive game and engineering experiments |
+| [Juriscribe](https://github.com/Luke883i/juriscribe) | Closed and unmaintained legal-research experiment; not for operational reliance |
 
-Some historical or engineering components of A-OSP are not public. The [programme registry](PROGRAMME.json) also records private and historical lineage, which is not a public access path.
+Potential application areas include financial and internal audit, risk and compliance, professional services, enterprise knowledge management, education and AI-assisted software delivery. These are opportunities, not certified deployments.
 
-## How to interpret engineering claims
+## Founder and academic trajectory
 
-**Product, source and repository are distinct.** Source tests, modelled falsifications, browser simulations, actual deployment, independent user acceptance and human authorization are different evidence levels. [CORA's qualitative maturity rubric](https://github.com/Luke883i/cora/blob/main/docs/CORA_SCORE.md) defines two independent proposed 1–5 assessment axes: development assurance and remediation assurance. Scores are not automatic CLI outputs and require assessor, Git SHA, evidence and blockers to become measured assessments.
+**Gianluca Conte** — Multidisciplinary team leader across consulting, pharmaceuticals, healthcare and higher education, with experience coordinating executive-level activities. Combines audit, compliance and information-security leadership with accounting, statistics, applied mathematics and AI research; contributes to professional communities and standards.
 
-## Documentation and authority
+| Year | Institution | Academic programme | Thesis (original PDF) |
+| --- | --- | --- | --- |
+| 2009 | University of Pisa | M.Sc., Applied Mathematics for Economics | [Game theory in social negotiations](theses/2009-game-theory-social-negotiations.pdf) |
+| 2011 | University of Pisa | M.Sc., Audit & Corporate Criminal Law | [Corruption-risk management](theses/2011-corruption-risk-management.pdf) |
+| 2022 | University of Milan | M.Sc., Cybersecurity | [Security organization, governance and control](theses/2022-information-security-governance.pdf) |
+| 2025 | University of Udine | Postgraduate diploma, Philosophy of AI & Information | [Reticular local abstraction and epistemic convolutions](theses/2025-reticular-local-abstraction.pdf) |
 
-[PROGRAMME.json](PROGRAMME.json) describes membership and relationships; [programme method](programme/METHOD.md) describes the common pattern; [AUTHOR.json](AUTHOR.json) owns author and archive metadata. Each linked repository owns its own current code, releases, evidence and governance. Start with the project that interests you, not with the whole theoretical corpus.
+The theses document the author's academic trajectory; they do not themselves validate AOSP products or the ROA theory.
+
+## Scope and records
+
+[Programme registry](PROGRAMME.json) · [Historical snapshot](history/README.md)
+
+Source-level checks, Git receipts, modelled mutations, runtime behaviour, independent acceptance and professional authorization are different evidence levels. Each product repository remains authoritative for its own implementation and release.
