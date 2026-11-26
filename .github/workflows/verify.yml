@@ -1,0 +1,19 @@
+name: AOSP programme contract
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  repository-contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Verify programme structure and original thesis blobs
+        run: python3 -B scripts/verify.py
+      - name: Run adversarial contract and physical mutation tests
+        run: python3 -B -m unittest discover -s tests -v

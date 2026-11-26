@@ -2,14 +2,13 @@
   "schema": "roa-research-programme/v3",
   "programme": {
     "id": "PRG-ROA",
-    "name": "ROA Research Programme - Computational Epistemics, Semantic Architectures & Governable AI Systems",
-    "short_name": "ROA Research Programme",
+    "canonical_name": "AOSP",
+    "name": "AOSP - Augmented Ontological Semantic Platforms",
     "hub": "academics",
     "theoretical_anchor": "ROA",
-    "thesis": "The ROA Research Programme studies how bounded human-AI observers can construct, transform, persist and use epistemic state without silently converting representation into reality, model output into evidence, evidence into authority, or execution into observed-world truth.",
-    "research_question": "How can AI systems compute, represent, persist and govern semantic and epistemic state within declared horizons while keeping evidence, inference, authority, decision, execution and observed-world truth distinguishable and reconstructable?",
-    "state_policy": "Repository-local authorities own current runtime, release, evidence and governance state. This registry owns programme identity, membership, roles, cross-repository relations and shared claim boundaries only.",
-    "hub_scope": "Public programme entrypoint and coordination surface. Author and academic-archive metadata are separately authoritative in AUTHOR.json."
+    "flagship": "cora",
+    "identity_note": "The original PRG-ROA identifier and v3 schema are retained for existing consumers; AOSP is the public programme identity.",
+    "state_policy": "Repository-local sources, runtime, acceptance evidence and releases remain authoritative."
   },
   "repositories": [
     {
@@ -133,37 +132,64 @@
       "strength": "LINEAGE"
     }
   ],
-  "engineering_method_profile": {
-    "status": "PROGRAMME_LEVEL_DESCRIPTIVE_PROFILE",
-    "repository_local_method_remains_authoritative": true,
-    "sequence": [
-      "exact AS-IS",
-      "gap/debt and authority/evidence boundary derivation",
-      "minimum coherent semantic slice",
-      "revision and exact source/blob binding where required",
-      "runtime implementation",
-      "repository-local tests/oracles/receipts/readback",
-      "semantic/state/authority falsification",
-      "additional no-novelty tail",
-      "merge and exact AS-IS re-derivation"
-    ],
-    "mutation_scale_policy": "Risk-adjusted and repository-local; scale alone is never sufficient evidence.",
-    "saturation_policy": "A bounded modeled saturation claim requires no new material failure class/signature in an additional declared tail. Late novelty invalidates saturation and requires repair, escalation or model/taxonomy revision.",
-    "compression_extension": "Where transformation/compression is optimized, a separate tail may test for no materially better valid compression.",
-    "claim_boundary": "Modelled saturation does not substitute for executable, runtime, physical, external or scientific proof required by a claim."
+  "tracks": [
+    {
+      "name": "iKant-EDU",
+      "kind": "experimental_cognitive_research",
+      "first_release_target": "2027-Q1",
+      "target_status": "PLANNED_NOT_VALIDATED",
+      "public_research_repo": "Luke883i/iKant_EDU",
+      "public_repo_is_release": false
+    }
+  ],
+  "author": {
+    "name": "Gianluca Conte",
+    "record_type": "AUTHOR_REPORTED",
+    "historical_record": "history/README.md"
   },
+  "theses": [
+    {
+      "id": "TH-2009",
+      "year": 2009,
+      "institution": "UniPi",
+      "qualification": "M.Sc. Applied Mathematics for Economics",
+      "topic": "Game theory in social negotiations",
+      "path": "theses/2009-game-theory-social-negotiations.pdf",
+      "blob_sha": "b263a67194b2e0f502a2acdea72cbc9ceca05fe2"
+    },
+    {
+      "id": "TH-2011",
+      "year": 2011,
+      "institution": "UniPi",
+      "qualification": "M.Sc. Audit & Corporate Criminal Law",
+      "topic": "Corruption-risk management",
+      "path": "theses/2011-corruption-risk-management.pdf",
+      "blob_sha": "995aad80d8933791b074e3c7c09535822cdccb63"
+    },
+    {
+      "id": "TH-2022",
+      "year": 2022,
+      "institution": "UniMi",
+      "qualification": "M.Sc. Cybersecurity",
+      "topic": "Organization, governance and control of security",
+      "path": "theses/2022-information-security-governance.pdf",
+      "blob_sha": "783667705671e7274f0fee5b9b4e8d215b966655"
+    },
+    {
+      "id": "TH-2025",
+      "year": 2025,
+      "institution": "UniUd",
+      "qualification": "Pg.Dip. Philosophy of AI & Information",
+      "topic": "Reticular Local Abstraction and epistemic convolutions (RLA-ECNN)",
+      "path": "theses/2025-reticular-local-abstraction.pdf",
+      "blob_sha": "7aa056bc5d50a6c62ce77debd8b04e8813db7e7e"
+    }
+  ],
   "governance": {
-    "shared_invariant": [
-      "representation != reality",
-      "model output != evidence",
-      "evidence != permission",
-      "permission != decision",
-      "decision != execution",
-      "execution != observed-world truth",
-      "receipt != external validation",
-      "implementation != scientific proof",
-      "modelled saturation != runtime/physical/external proof"
-    ],
+    "membership_header": {
+      "version": 2,
+      "marker": "programme-header:v2"
+    },
     "claim_boundary": {
       "programme_membership_implies_formal_derivation": false,
       "programme_membership_implies_conformance": false,
@@ -171,28 +197,6 @@
       "programme_membership_implies_production_readiness": false,
       "academic_archive_implies_roa_lineage": false,
       "modelled_saturation_implies_external_validation": false
-    },
-    "membership_header": {
-      "version": 2,
-      "marker": "programme-header:v2",
-      "required_semantics": [
-        "canonical programme identity",
-        "programme hub",
-        "repository-specific role",
-        "ROA theoretical anchor",
-        "repository-local authority boundary",
-        "membership non-entailment boundary"
-      ],
-      "mutable_release_state_forbidden": true,
-      "falsification_evidence": {
-        "generated_headers_accepted": 11,
-        "mutated_headers_rejected": 110,
-        "survivors": 0
-      },
-      "applies_to_statuses": [
-        "CURRENT"
-      ],
-      "legacy_nodes_may_omit_header": true
     }
   }
 }
