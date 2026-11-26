@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -58,19 +59,30 @@ def check_contract(readme: str, registry: dict) -> list[str]:
         require(phrase in readme, "missing:" + phrase)
     # Public entrypoint: seven bounded sections in the user's chosen order.
     sections = (
-        "## 1. Founder and academic trajectory",
-        "## 2. ROA",
-        "## 3. AOSP",
-        "## 4. CORA",
-        "## 5. iKant-EDU",
-        "## 6. EVRIA",
-        "## 7. Experimental",
+        "## Founder and academic trajectory",
+        "## ROA — theoretical research programme",
+        "## AOSP — engineering programme",
+        "## CORA — flagship experimental witness",
+        "## iKant-EDU",
+        "## EVRIA",
+        "## Experimental",
     )
     positions = [readme.find(item) for item in sections]
     require(all(p >= 0 for p in positions) and positions == sorted(positions)
             and len(set(positions)) == len(sections), "readme-section-order")
-    require(readme.count("```mermaid") == 4, "readme-four-diagrams")
-    require("CORA does **not** seek superiority" in readme,
+    diagrams = re.findall(r"```mermaid\n(.*?)\n```", readme, re.S)
+    require(len(diagrams) == 2 and all(d.startswith("flowchart LR\n") for d in diagrams),
+            "readme-two-horizontal-diagrams")
+    for item in ("ICTC", "Teddy", "Juriscribe", "NILO", "LUMEN"):
+        require(item.lower() in readme.lower(), "missing-prototype:" + item)
+    require("not enterprise-ready" in readme and
+            "safe enterprise use has not been demonstrated or claimed" in readme and
+            "no independent enterprise certification" in readme,
+            "prototype-status-boundary")
+    require("replaceable AI coding agents" in readme and
+            "not proof that CORA authored" in readme,
+            "agent-attribution-boundary")
+    require("CORA does not seek superiority" in readme,
             "checklist-comparator-boundary")
     require("16/16 fixed cases" in readme and "no people were tested" in readme,
             "research-negative-evidence")
@@ -101,6 +113,8 @@ def check_contract(readme: str, registry: dict) -> list[str]:
             len(set(repos)) == len(rows), "membership-uniqueness")
     require(set(PUBLIC) <= set(ids), "public-membership")
     for slug in PUBLIC:
+        if slug == "academics":
+            continue  # A public hub need not self-link; preserve the manual editorial choice.
         require("https://github.com/Luke883i/" + slug in readme, "public-route:" + slug)
     edges = registry.get("relations", [])
     require(len(edges) == 3 and

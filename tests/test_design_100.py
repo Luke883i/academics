@@ -22,20 +22,25 @@ ESSENTIAL = {
     "tests/test_design_100.py", ".github/workflows/verify.yml",
     *(p for p, _ in verify.THESIS_BLOBS.values()),
 }
+def swap_roa_aosp(text):
+    first = text.index("## ROA — theoretical research programme")
+    second = text.index("## AOSP — engineering programme")
+    third = text.index("## CORA — flagship experimental witness")
+    return text[:first] + text[second:third] + text[first:second] + text[third:]
+
+
 CONTENT_ALTERNATIVES = (
     ("full-guided-walkthrough", lambda r: r),
     ("extra-executive-summary", lambda r: r.replace(
-        "## 1. Founder", "A second introductory briefing repeats the programme identity.\n\n## 1. Founder", 1)),
+        "## Founder", "A second introductory briefing repeats the programme identity.\n\n## Founder", 1)),
     ("extra-navigational-note", lambda r: r.replace(
-        "## 4. CORA", "## Reader notes\n\nThe evidence is described in the sections below.\n\n## 4. CORA", 1)),
+        "## CORA", "## Reader notes\n\nThe evidence is described in the sections below.\n\n## CORA", 1)),
     ("more-technical-preface", lambda r: r.replace(
-        "## 3. AOSP", "Readers must distinguish Git, state, authority and host checks.\n\n## 3. AOSP", 1)),
-    ("roa-aosp-inverted", lambda r: r.replace(
-        "## 2. ROA", "## 3. AOSP", 1).replace(
-        "## 3. AOSP — engineering programme", "## 2. ROA — engineering programme", 1)),
+        "## AOSP", "Readers must distinguish Git, state, authority and host checks.\n\n## AOSP", 1)),
+    ("roa-aosp-inverted", swap_roa_aosp),
     ("missing-counterexample", lambda r: r.replace(
-        "CORA does **not** seek superiority over well-designed engineering checklists.",
-        "CORA replaces well-designed engineering checklists.", 1)),
+        "CORA does not seek superiority over a strong engineering checklist.",
+        "CORA guarantees superiority over engineering checklists.", 1)),
     ("removed-diagram", lambda r: r.replace(chr(96) * 3 + "mermaid", chr(96) * 3 + "text", 1)),
     ("lost-original-commit", lambda r: r.replace(
         "f98690d0b19b9e40dae05ebfccb70afedaee2bbc",
