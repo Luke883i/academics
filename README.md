@@ -18,7 +18,7 @@ These original PDFs document the author's academic trajectory; they do not prove
 
 **[ROA — Reticular Observer Architectures](https://github.com/Luke883i/ROA)** studies how bounded human or computational observers form and revise representations under incomplete evidence. Its research topics include epistemic horizons, provenance, admissibility of claims, uncertainty and controlled reification.
 
-**Plain-language idea:** a model's description is not the world; an AI answer is not automatically evidence; evidence does not grant permission; execution does not establish the real-world result. ROA is an evolving theoretical corpus, not an independent scientific validation of the applications below.
+A model's description is not the world; an AI answer is not automatically evidence; evidence does not grant permission; execution does not establish the real-world result. ROA is an evolving theoretical corpus, not an independent scientific validation of the applications below.
 
 ## AOSP — engineering programme
 
@@ -26,17 +26,17 @@ These original PDFs document the author's academic trajectory; they do not prove
 
 The objective is practical: make AI-assisted work useful while retaining sources, authority boundaries, known gaps and the evidence required to justify decisions. Potential applications include financial and internal audit, risk and compliance, professional services, enterprise knowledge management and education. These are prospective markets, not claims of professional certification or autonomous audit judgement.
 
-**Programme trajectory:** ROA frames the theory of bounded observation; AOSP explores engineering implementations; CORA is its experimental witness for traceable software development. Cognitive research, a future operating environment and applied prototypes test different limits. No single deployed platform or runtime is implied.
+ROA provides the theoretical foundations; AOSP develops engineering experiments; and CORA puts evidence-led software development into practice. Cognitive research, a future operating environment and applied prototypes test different limits. No single deployed platform or runtime is implied.
 
-## CORA — flagship experimental witness
+## CORA — evidence-led software engineering
 
 **[CORA — Continuous Ontological Repository Assurance](https://github.com/Luke883i/cora)** is AOSP's flagship experimental method and optional Python 3.11+ assurance engine. It helps coordinate **replaceable AI coding agents**, not replace the coding agent, execute code from a prompt or authorize deployment.
 
-**For non-engineers:** suppose you ask AI to make a customer-reporting app. The Save button appears, but does the report survive restarting the server? Can a different customer close it? Which exact version was tested? CORA starts from these observable outcomes instead of a list of fashionable features.
+Consider a customer-reporting application built with an AI coding agent. A Save button may look complete even if the report disappears after a restart, another customer can close it, or nobody can identify the tested version. CORA turns those risks into explicit checks.
 
-### Two horizontal diagrams
+### From requirements to evidence
 
-**From a goal to a bounded decision.** Derive acceptance evidence backward; implement and test forward. When a counterexample survives, revisit the roadmap.
+The process starts with the intended outcome, derives the conditions needed to achieve it, and verifies each incremental change. A surviving counterexample requires reassessing the plan.
 
 ```mermaid
 flowchart LR
@@ -48,7 +48,7 @@ flowchart LR
     Q -- "For this scope" --> H["Human decision"]
 ```
 
-**Three distinct levels.** Passing tests on a Git revision cannot, by itself, establish product acceptance.
+Product outcomes, executable behaviour and repository history are related, but not interchangeable. Passing tests on a Git revision does not, by itself, establish product acceptance.
 
 ```mermaid
 flowchart LR
@@ -57,9 +57,9 @@ flowchart LR
     R -. "not automatic product proof" .-> P
 ```
 
-**CORA's loop:** work backward from the **global AND-Definition of Done** to necessary source, runtime and external checks; select a small semantic slice with rollback; materialize actual Git blobs, tree and commit; exercise target-native positive/negative tests; use disposable physical mutations and bounded scenario saturation to challenge the oracles; record survivors; **re-falsify the ongoing roadmap after every slice** and follow the next unresolved obligation. A large modeled mutation count is not a large number of executed product tests.
+In practice, CORA works backward from the **global AND-Definition of Done** to necessary source, runtime and external checks; select a small semantic slice with rollback; materialize actual Git blobs, tree and commit; exercise target-native positive/negative tests; use disposable physical mutations and bounded scenario saturation to challenge the oracles; record survivors; **re-falsify the ongoing roadmap after every slice** and follow the next unresolved obligation. A large modeled mutation count is not a large number of executed product tests.
 
-**For beginners:** [CORA-METHOD](https://github.com/Luke883i/cora) can guide ChatGPT Projects (including eligible Plus and Edu plans). A Project prompt or ZIP **is not a runner**. Real writing, runtime tests and CORA-ENGINE require authorized tools, actual Git and a separate approved runner. Source evidence, runtime proof, reviewer identity and release authority remain distinct.
+[CORA-METHOD](https://github.com/Luke883i/cora) can guide ChatGPT Projects (including eligible Plus and Edu plans). A Project prompt or ZIP **is not a runner**. Real writing, runtime tests and CORA-ENGINE require authorized tools, actual Git and a separate approved runner. Source evidence, runtime proof, reviewer identity and release authority remain distinct.
 
 **CORA does not seek superiority over a strong engineering checklist.** It tests whether non-experts can coordinate rigorous engineering with a replaceable coding agent, despite substantial compute and procedural cost. A purposive comparison tied **16/16 fixed cases** with a strong executable checklist; in a selected 11-PR dossier, 70 of 92 evidence obligations were not observed **in that dossier**, not diagnosed as defects. Forty-four briefings were modeled; **no people were tested**. Human comprehension, effectiveness and value for money remain unvalidated hypotheses.
 
@@ -77,11 +77,11 @@ Runtime surfaces include local Node tests, **MCP stdio**, HTTP/demo and session-
 
 A local browser/journal pilot exists, but there is **no verified integration** of the original component runtimes, real enterprise identity/tenant separation or external acceptance. No safe production service is claimed.
 
-## Experimental projects that challenged CORA's method
+## Applied prototypes and engineering lessons
 
 **ICTC, TEDDY, Juriscribe, NILO and LUMEN are experimental prototypes: not enterprise-ready, safe enterprise use has not been demonstrated or claimed, and no independent enterprise certification or production-security assurance is claimed.** They illustrate iterative work with **replaceable AI coding agents using CORA-METHOD**, not proof that CORA authored or executed each historical commit. **Closed and unmaintained:** Juriscribe is not suitable for legal or professional reliance.
 
-| Prototype | A concrete boundary, not a production certificate | Original Git source |
+| Prototype | Engineering lesson | Original Git source |
 | --- | --- | --- |
 | [ICTC](https://github.com/Luke883i/ictc) | Saving is not persistence: seven procedures gained same-SQLite restart checks. | [`80a1e71b98`](https://github.com/Luke883i/ictc/commit/80a1e71b98f63a9f5a30d4398eefaadea27ba39c) |
 | [Teddy](https://github.com/Luke883i/teddy) | Trusted browser origins and CSRF denials must be distinguished from a page that loads. | [`f04a124ac0`](https://github.com/Luke883i/teddy/commit/f04a124ac024988c1a55884be1560b156f6e574f) |
@@ -89,7 +89,7 @@ A local browser/journal pilot exists, but there is **no verified integration** o
 | [NILO](https://github.com/Luke883i/NILO) | A short keypress must survive game frame/state transitions. | [`32e7935fbf`](https://github.com/Luke883i/NILO/commit/32e7935fbf425c7c513c95862c019230e74d014c) |
 | [Juriscribe](https://github.com/Luke883i/juriscribe) | Archived, unmaintained historical legal-research prototype; no safe legal reliance. | [Repository history](https://github.com/Luke883i/juriscribe) |
 
-**Test the test:** [CORA `4db17ab598`](https://github.com/Luke883i/cora/commit/4db17ab598c1bfbee823d5161c536c29818fa181) repaired a physical JSON mutant harness; [`f98690d0b1`](https://github.com/Luke883i/cora/commit/f98690d0b19b9e40dae05ebfccb70afedaee2bbc) strengthened a checker against composite mutant survivors. A source commit identifies a change and its test intent, not independent production execution, AI authorship or user benefit.
+CORA also challenges its own verification tools: [`4db17ab598`](https://github.com/Luke883i/cora/commit/4db17ab598c1bfbee823d5161c536c29818fa181) repaired a physical JSON mutant harness; [`f98690d0b1`](https://github.com/Luke883i/cora/commit/f98690d0b19b9e40dae05ebfccb70afedaee2bbc) strengthened a checker against composite mutant survivors. A source commit identifies a change and its test intent, not independent production execution, AI authorship or user benefit.
 
 ## Evidence and archive
 
