@@ -1,7 +1,7 @@
 <!-- programme-header:v2 -->
-> **AOSP programme** — [Hub](https://github.com/Luke883i/academics) · [ROA theory](https://github.com/Luke883i/ROA) · [CORA engineering](https://github.com/Luke883i/cora). Every repository is independently readable. Membership does not imply formal derivation, shared runtime, scientific validation, certification, or production readiness. Repository-local code, evidence, and governance remain authoritative.
+> **AOSP programme** — [ROA theory](https://github.com/Luke883i/ROA) · [CORA engineering](https://github.com/Luke883i/cora). Every repository is independently readable. Membership does not imply formal derivation, shared runtime, scientific validation, certification, or production readiness. Repository-local code, evidence, and governance remain authoritative.
 
-## 1. Founder and academic trajectory
+## Founder and academic trajectory
 
 **Gianluca Conte** — Multidisciplinary team leader across consulting, pharmaceuticals, healthcare and higher education, including C-level coordination. Combines audit, compliance and information-security work with accounting, statistics, applied mathematics and responsible-AI research. Contributes to professional communities and standards; interested in philosophy of science, travel and well-being.
 
@@ -14,19 +14,19 @@
 
 These original PDFs document the author's academic trajectory; they do not prove the later theory or validate software. Qualifications and profile are author-reported.
 
-## 2. ROA — theoretical research programme
+## ROA — theoretical research programme
 
 **[ROA — Reticular Observer Architectures](https://github.com/Luke883i/ROA)** studies how bounded human or computational observers form and revise representations under incomplete evidence. Its research topics include epistemic horizons, provenance, admissibility of claims, uncertainty and controlled reification.
 
 **Plain-language idea:** a model's description is not the world; an AI answer is not automatically evidence; evidence does not grant permission; execution does not establish the real-world result. ROA is an evolving theoretical corpus, not an independent scientific validation of the applications below.
 
-## 3. AOSP — engineering programme
+## AOSP — engineering programme
 
 **AOSP (Augmented Ontological Semantic Platforms)** is the umbrella programme for experiments in persistent knowledge, governable cognition, AI-assisted software engineering and domain applications. Its participants are independently governed repositories—not a single deployed platform.
 
 The objective is practical: make AI-assisted work useful while retaining sources, authority boundaries, known gaps and the evidence required to justify decisions. Potential applications include financial and internal audit, risk and compliance, professional services, enterprise knowledge management and education. These are prospective markets, not claims of professional certification or autonomous audit judgement.
 
-## 4. CORA — flagship experimental witness
+## CORA — flagship experimental witness
 
 **[CORA — Continuous Ontological Repository Assurance](https://github.com/Luke883i/cora)** is AOSP's **flagship experimental engineering product**: an agent-agnostic method, plus an optional local Python assurance engine, for guiding AI coding agents from a human outcome to inspectable engineering evidence. It does not itself write features, run merely because a prompt was pasted, approve changes or certify an application.
 
@@ -100,7 +100,7 @@ These examples are drawn from the [*From Intent to Evidence* research dossier](h
 
 **An informative null result:** in an author-selected study, CORA's evidence model and a strong executable checklist tied on **16/16 fixed cases**. A retrospective sample of 11 PRs across five repositories recorded 92 applicable evidence obligations, with 70 *not observed in that dossier* (not 70 proven defects). Forty-four modeled briefings were generated; **no people were tested**. These numbers are a research boundary, not marketing proof of better engineering.
 
-## 5. iKant-EDU — cognitive model, stack and runtime
+## iKant-EDU — cognitive model, stack and runtime
 
 **iKant-EDU** is a distinct experimental **Node.js 22.13+** cognitive coordination system around a replaceable language model. It tests the *contribution* of coordinated functions—semantic analysis, epistemic limits, planning, reasoning, social context and reflective checks—not a claim of machine consciousness.
 
@@ -120,7 +120,7 @@ flowchart LR
 
 **First-release target: Q1 2027**, subject to validation. The public [iKant_EDU](https://github.com/Luke883i/iKant_EDU) is a **separate research line**, not the private iKant-EDU runtime or proof of a completed release.
 
-## 6. EVRIA — envisioned Epistemic Operating Environment
+## EVRIA — envisioned Epistemic Operating Environment
 
 **EVRIA** is a *to-be* **Epistemic Operating Environment**: an OS-like workspace in which people collect sources, query knowledge, inspect evidence, draft documents and submit consequential actions to review.
 
@@ -139,7 +139,7 @@ flowchart TD
 
 **Observed limit:** EVRIA contains a local browser pilot backed by an append-only journal, not a verified integration of the original knowledge, iKant and CORA runtimes. Real identity, tenant separation, enterprise workflows and external usability remain open. EVRIA's repository is private; this overview does not grant access.
 
-## 7. Experimental projects that challenged CORA's method
+## Experimental projects that challenged CORA's method
 
 The following independently governed projects provided different **engineering problem classes** used to refine assurance questions. They are not evidence of one shared runtime or that CORA authored every commit.
 
@@ -157,4 +157,4 @@ The following independently governed projects provided different **engineering p
 
 [Programme registry](PROGRAMME.json) · [Original academic PDFs](theses/) · [Historical baseline](history/README.md) · [CORA research dossier](https://github.com/Luke883i/cora/tree/main/research/decision-ready-assurance)
 
-Git histories attest source identities; native test runs attest only what they exercised; external acceptance and human authorization remain separate. AOSP membership is not evidence of technical integration or product readiness.
+
