@@ -51,11 +51,42 @@ def check_contract(readme: str, registry: dict) -> list[str]:
         "Repository-local code, evidence, and governance remain authoritative",
     ):
         require(phrase in readme[:700], "authority-boundary:" + phrase)
-    for phrase in ("Flagship", "CORA", "product", "software", "repository",
+    for phrase in ("flagship", "CORA", "product", "software", "repository",
                    "Git blobs", "mutation", "roadmap", "iKant-EDU",
                    "First-release target: Q1 2027", "subject to validation",
                    "Gianluca Conte", "Closed and unmaintained"):
         require(phrase in readme, "missing:" + phrase)
+    # Public entrypoint: seven bounded sections in the user's chosen order.
+    sections = (
+        "## 1. Founder and academic trajectory",
+        "## 2. ROA",
+        "## 3. AOSP",
+        "## 4. CORA",
+        "## 5. iKant-EDU",
+        "## 6. EVRIA",
+        "## 7. Experimental",
+    )
+    positions = [readme.find(item) for item in sections]
+    require(all(p >= 0 for p in positions) and positions == sorted(positions)
+            and len(set(positions)) == len(sections), "readme-section-order")
+    require(readme.count("```mermaid") == 4, "readme-four-diagrams")
+    require("CORA does **not** seek superiority" in readme,
+            "checklist-comparator-boundary")
+    require("16/16 fixed cases" in readme and "no people were tested" in readme,
+            "research-negative-evidence")
+    require("private iKant-EDU runtime" in readme
+            and "public [iKant_EDU]" in readme, "edu-repository-distinction")
+    require("to-be" in readme and "meta-controller" in readme
+            and "verified integration" in readme, "evria-future-boundary")
+    for sha in (
+        "80a1e71b98f63a9f5a30d4398eefaadea27ba39c",
+        "f04a124ac024988c1a55884be1560b156f6e574f",
+        "1ccb6fd0f7b74832a2f5bf64e27e38704e15cb30",
+        "32e7935fbf425c7c513c95862c019230e74d014c",
+        "4db17ab598c1bfbee823d5161c536c29818fa181",
+        "f98690d0b19b9e40dae05ebfccb70afedaee2bbc",
+    ):
+        require("/commit/" + sha in readme, "commit-case:" + sha[:10])
     require(registry.get("schema") == SCHEMA, "schema")
     p = registry.get("programme", {})
     require(p.get("id") == "PRG-ROA", "legacy-id")
