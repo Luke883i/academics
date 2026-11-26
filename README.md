@@ -1,10 +1,6 @@
 <!-- programme-header:v2 -->
 > **AOSP programme** — [Hub](https://github.com/Luke883i/academics) · [ROA theory](https://github.com/Luke883i/ROA) · [CORA engineering](https://github.com/Luke883i/cora). Every repository is independently readable. Membership does not imply formal derivation, shared runtime, scientific validation, certification, or production readiness. Repository-local code, evidence, and governance remain authoritative.
 
-# AOSP — Augmented Ontological Semantic Platforms
-
-A public point of entry to an independent research and engineering programme: the person, the theory, the experimental software and the evidence.
-
 ## 1. Founder and academic trajectory
 
 **Gianluca Conte** — Multidisciplinary team leader across consulting, pharmaceuticals, healthcare and higher education, including C-level coordination. Combines audit, compliance and information-security work with accounting, statistics, applied mathematics and responsible-AI research. Contributes to professional communities and standards; interested in philosophy of science, travel and well-being.
