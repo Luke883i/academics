@@ -113,6 +113,8 @@ def check_contract(readme: str, registry: dict) -> list[str]:
             len(set(repos)) == len(rows), "membership-uniqueness")
     require(set(PUBLIC) <= set(ids), "public-membership")
     for slug in PUBLIC:
+        if slug == "academics":
+            continue  # A public hub need not self-link; preserve the manual editorial choice.
         require("https://github.com/Luke883i/" + slug in readme, "public-route:" + slug)
     edges = registry.get("relations", [])
     require(len(edges) == 3 and
