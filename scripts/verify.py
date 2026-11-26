@@ -62,10 +62,10 @@ def check_contract(readme: str, registry: dict) -> list[str]:
         "## Founder and academic trajectory",
         "## ROA — theoretical research programme",
         "## AOSP — engineering programme",
-        "## CORA — flagship experimental witness",
+        "## CORA — evidence-led software engineering",
         "## iKant-EDU",
         "## EVRIA",
-        "## Experimental",
+        "## Applied prototypes",
     )
     positions = [readme.find(item) for item in sections]
     require(all(p >= 0 for p in positions) and positions == sorted(positions)
@@ -82,6 +82,14 @@ def check_contract(readme: str, registry: dict) -> list[str]:
     require("replaceable AI coding agents" in readme and
             "not proof that CORA authored" in readme,
             "agent-attribution-boundary")
+    for prompt_label in (
+        "### Two horizontal diagrams",
+        "**For non-engineers:**",
+        "**For beginners:**",
+        "**Plain-language idea:**",
+        "flagship experimental witness",
+    ):
+        require(prompt_label not in readme, "editorial-prompt-trace:" + prompt_label)
     require("CORA does not seek superiority" in readme,
             "checklist-comparator-boundary")
     require("16/16 fixed cases" in readme and "no people were tested" in readme,

@@ -25,7 +25,7 @@ ESSENTIAL = {
 def swap_roa_aosp(text):
     first = text.index("## ROA — theoretical research programme")
     second = text.index("## AOSP — engineering programme")
-    third = text.index("## CORA — flagship experimental witness")
+    third = text.index("## CORA — evidence-led software engineering")
     return text[:first] + text[second:third] + text[first:second] + text[third:]
 
 

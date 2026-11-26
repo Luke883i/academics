@@ -37,6 +37,8 @@ class ProgrammeContractTests(unittest.TestCase):
                 "https://github.com/Luke883i/cora", "https://example.invalid/cora"),
             "release-overclaim": self.readme.replace(
                 "subject to validation", "already validated", 1),
+            "editorial-prompt-trace": self.readme.replace(
+                "### From requirements to evidence", "### Two horizontal diagrams", 1),
             "academic-link": self.readme.replace(
                 "theses/2025-reticular-local-abstraction.pdf", "theses/lost.pdf"),
         }
