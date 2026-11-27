@@ -7,7 +7,7 @@
 
 | Year | Institution | Academic programme and focus | Original thesis |
 | --- | --- | --- | --- |
-| **2007** | University of Pisa | Bachelor's degree in Economic Sciences | Life Cycle Theory (PDF not archived here) |
+| **2007** | University of Pisa | Bachelor's degree in Economic Sciences | Life Cycle Theory |
 | **2009** | University of Pisa | M.Sc. Applied Mathematics for Economics; game theory and social negotiation | [Game theory in social negotiations](theses/2009-game-theory-social-negotiations.pdf) |
 | **2011** | University of Pisa | M.Sc. Audit & Corporate Criminal Law; corruption risk and organizational control | [Corruption-risk management](theses/2011-corruption-risk-management.pdf) |
 | **2022** | University of Milan | M.Sc. Cybersecurity; information-security organization, governance and control | [Security organization, governance and control](theses/2022-information-security-governance.pdf) |
