@@ -14,21 +14,30 @@
 
 These original PDFs document the author's academic trajectory; they do not prove the later theory or validate software. Qualifications and profile are author-reported.
 
-## ROA — theoretical research programme
+## Theoretical research programme (ROA)
 
 **[ROA — Reticular Observer Architectures](https://github.com/Luke883i/ROA)** studies how bounded human or computational observers form and revise representations under incomplete evidence. Its research topics include epistemic horizons, provenance, admissibility of claims, uncertainty and controlled reification.
 
 A model's description is not the world; an AI answer is not automatically evidence; evidence does not grant permission; execution does not establish the real-world result. ROA is an evolving theoretical corpus, not an independent scientific validation of the applications below.
 
-## AOSP — engineering programme
+## Engineering programme (AOSP)
 
 **AOSP (Augmented Ontological Semantic Platforms)** is the umbrella programme for experiments in persistent knowledge, governable cognition, AI-assisted software engineering and domain applications. Its participants are independently governed repositories—not a single deployed platform.
 
 The objective is practical: make AI-assisted work useful while retaining sources, authority boundaries, known gaps and the evidence required to justify decisions. Potential applications include financial and internal audit, risk and compliance, professional services, enterprise knowledge management and education. These are prospective markets, not claims of professional certification or autonomous audit judgement.
 
-ROA provides the theoretical foundations; AOSP develops engineering experiments; and CORA puts evidence-led software development into practice. Cognitive research, a future operating environment and applied prototypes test different limits. No single deployed platform or runtime is implied.
+### Programme structure
 
-## CORA — evidence-led software engineering
+**ROA** (theoretical research) → informs **AOSP** (engineering programme). The relationship is conceptual, not evidence of a shared runtime or formal scientific validation.
+
+| AOSP initiative | Role within the programme | Status and limits |
+| --- | --- | --- |
+| **[CORA](https://github.com/Luke883i/cora)** | Flagship engineering method and optional local Python CLI | Experimental; benefits for non-specialists and superiority over strong checklists remain unproven. |
+| **iKant-EDU** | Cognitive coordination research and Node.js runtime | Experimental; first release targeted for Q1 2027, subject to validation. |
+| **EVRIA** | Proposed epistemic operating environment, with iKant as intended meta-controller | Envisioned; native integration and safe deployment are not demonstrated. |
+| **⚠ [ICTC](https://github.com/Luke883i/ictc), [Teddy](https://github.com/Luke883i/teddy), [LUMEN](https://github.com/Luke883i/lumen), [NILO](https://github.com/Luke883i/NILO), [Juriscribe](https://github.com/Luke883i/juriscribe)** | Independent application prototypes developed with replaceable coding agents using CORA-METHOD | **EXPERIMENTAL ONLY** — not enterprise-ready; safe enterprise use and certification are not claimed. Juriscribe is closed and unmaintained. |
+
+## Evidence-led software engineering (CORA)
 
 **[CORA — Continuous Ontological Repository Assurance](https://github.com/Luke883i/cora)** is AOSP's flagship experimental method and optional Python 3.11+ assurance engine. It helps coordinate **replaceable AI coding agents**, not replace the coding agent, execute code from a prompt or authorize deployment.
 
@@ -57,13 +66,21 @@ flowchart LR
     R -. "not automatic product proof" .-> P
 ```
 
-In practice, CORA works backward from the **global AND-Definition of Done** to necessary source, runtime and external checks; select a small semantic slice with rollback; materialize actual Git blobs, tree and commit; exercise target-native positive/negative tests; use disposable physical mutations and bounded scenario saturation to challenge the oracles; record survivors; **re-falsify the ongoing roadmap after every slice** and follow the next unresolved obligation. A large modeled mutation count is not a large number of executed product tests.
+CORA derives **conjunctive acceptance criteria** from the intended result: source requirements, executable behaviour and any independent user or external checks must each have appropriate evidence. Work proceeds in small, reversible changes; after every change, the requirements, dependencies and remaining tests are reassessed.
+
+| Engineering technique | How it is applied | Evidence boundary |
+| --- | --- | --- |
+| **Content-addressed version control** | Git blob, tree and commit hashes identify the exact files and revision under examination; test receipts can refer to that revision. | A matching hash identifies source bytes, not correct behaviour or human approval. |
+| **Mutation testing** | Controlled defects are introduced into disposable copies of real source or test logic. Positive and negative tests should detect them; undetected mutations remain visible. | Detection depends on the chosen operators, tests and runtime actually executed. |
+| **Combinatorial fault testing and bounded convergence analysis** | Reproducible, seeded scenarios vary declared failure conditions against independently specified expected results. A further sample checks for previously unseen failure categories. | Modelled scenarios are not physical code mutations; a run with no new findings does not prove the absence of defects. |
+
+Target-owned tests must run in an approved environment. Missing runtime evidence or independent acceptance remains **NOT_RUN** or otherwise explicitly unresolved; a source-level PASS cannot stand in for product readiness.
 
 [CORA-METHOD](https://github.com/Luke883i/cora) can guide ChatGPT Projects (including eligible Plus and Edu plans). A Project prompt or ZIP **is not a runner**. Real writing, runtime tests and CORA-ENGINE require authorized tools, actual Git and a separate approved runner. Source evidence, runtime proof, reviewer identity and release authority remain distinct.
 
 **CORA does not seek superiority over a strong engineering checklist.** It tests whether non-experts can coordinate rigorous engineering with a replaceable coding agent, despite substantial compute and procedural cost. A purposive comparison tied **16/16 fixed cases** with a strong executable checklist; in a selected 11-PR dossier, 70 of 92 evidence obligations were not observed **in that dossier**, not diagnosed as defects. Forty-four briefings were modeled; **no people were tested**. Human comprehension, effectiveness and value for money remain unvalidated hypotheses.
 
-## iKant-EDU — cognitive research and runtime
+## Cognitive research and runtime (iKant-EDU)
 
 **iKant-EDU** is an experimental **Node.js ≥22.13** cognitive-coordination system. One `cognitiveTurn` core combines semantic, epistemic, planning, social and reflective faculties; **StateVault** owns bounded state and memory. A replaceable language provider supplies text, not authority.
 
@@ -71,13 +88,13 @@ Runtime surfaces include local Node tests, **MCP stdio**, HTTP/demo and session-
 
 **First-release target: Q1 2027, subject to validation.** The public [iKant_EDU](https://github.com/Luke883i/iKant_EDU) is a distinct research line, **not** the private iKant-EDU runtime or a demonstrated public release.
 
-## EVRIA — envisioned Epistemic Operating Environment
+## Proposed epistemic operating environment (EVRIA)
 
 **EVRIA** is a **to-be** epistemic operating environment: gather sources, question durable knowledge, draft evidence-aware documents and submit material actions for human review. In the target architecture, EVRIA owns the workspace, the knowledge substrate owns durable records, **iKant is the governed meta-controller** of planning/action boundaries and CORA supplies independent source assurance.
 
 A local browser/journal pilot exists, but there is **no verified integration** of the original component runtimes, real enterprise identity/tenant separation or external acceptance. No safe production service is claimed.
 
-## Applied prototypes and engineering lessons
+## Experimental applications and engineering lessons
 
 **ICTC, TEDDY, Juriscribe, NILO and LUMEN are experimental prototypes: not enterprise-ready, safe enterprise use has not been demonstrated or claimed, and no independent enterprise certification or production-security assurance is claimed.** They illustrate iterative work with **replaceable AI coding agents using CORA-METHOD**, not proof that CORA authored or executed each historical commit. **Closed and unmaintained:** Juriscribe is not suitable for legal or professional reliance.
 

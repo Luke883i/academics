@@ -23,9 +23,9 @@ ESSENTIAL = {
     *(p for p, _ in verify.THESIS_BLOBS.values()),
 }
 def swap_roa_aosp(text):
-    first = text.index("## ROA — theoretical research programme")
-    second = text.index("## AOSP — engineering programme")
-    third = text.index("## CORA — evidence-led software engineering")
+    first = text.index("## Theoretical research programme (ROA)")
+    second = text.index("## Engineering programme (AOSP)")
+    third = text.index("## Evidence-led software engineering (CORA)")
     return text[:first] + text[second:third] + text[first:second] + text[third:]
 
 
@@ -34,9 +34,9 @@ CONTENT_ALTERNATIVES = (
     ("extra-executive-summary", lambda r: r.replace(
         "## Founder", "A second introductory briefing repeats the programme identity.\n\n## Founder", 1)),
     ("extra-navigational-note", lambda r: r.replace(
-        "## CORA", "## Reader notes\n\nThe evidence is described in the sections below.\n\n## CORA", 1)),
+        "## Evidence-led software engineering (CORA)", "## Reader notes\n\nThe evidence is described in the sections below.\n\n## Evidence-led software engineering (CORA)", 1)),
     ("more-technical-preface", lambda r: r.replace(
-        "## AOSP", "Readers must distinguish Git, state, authority and host checks.\n\n## AOSP", 1)),
+        "## Engineering programme (AOSP)", "Readers must distinguish Git, state, authority and host checks.\n\n## Engineering programme (AOSP)", 1)),
     ("roa-aosp-inverted", swap_roa_aosp),
     ("missing-counterexample", lambda r: r.replace(
         "CORA does not seek superiority over a strong engineering checklist.",
