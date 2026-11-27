@@ -79,6 +79,7 @@ def check_contract(readme: str, registry: dict) -> list[str]:
         "**AOSP** (engineering programme)",
         "**[CORA]",
         "**iKant-EDU**",
+        "first release targeted for Q1 2027, subject to validation",
         "**EVRIA**",
         "**EXPERIMENTAL ONLY**",
         "not enterprise-ready",
