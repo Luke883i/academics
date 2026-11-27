@@ -45,7 +45,7 @@ def check_contract(readme: str, registry: dict) -> list[str]:
 
     marker = "<!-- programme-header:v2 -->"
     require(readme.startswith(marker + "\n") and readme.count(marker) == 1, "canonical-header")
-    require("# AOSP" in readme and "Augmented Ontological Semantic Platforms" in readme, "programme-identity")
+    require("## Engineering programme (AOSP)" in readme and "Augmented Ontological Semantic Platforms" in readme, "programme-identity")
     for phrase in (
         "Every repository is independently readable",
         "Membership does not imply formal derivation",
@@ -53,23 +53,45 @@ def check_contract(readme: str, registry: dict) -> list[str]:
     ):
         require(phrase in readme[:700], "authority-boundary:" + phrase)
     for phrase in ("flagship", "CORA", "product", "software", "repository",
-                   "Git blobs", "mutation", "roadmap", "iKant-EDU",
+                   "Git blobs", "mutation", "reassessed", "iKant-EDU",
                    "First-release target: Q1 2027", "subject to validation",
                    "Gianluca Conte", "Closed and unmaintained"):
         require(phrase in readme, "missing:" + phrase)
     # Public entrypoint: seven bounded sections in the user's chosen order.
     sections = (
         "## Founder and academic trajectory",
-        "## ROA — theoretical research programme",
-        "## AOSP — engineering programme",
-        "## CORA — evidence-led software engineering",
-        "## iKant-EDU",
-        "## EVRIA",
-        "## Applied prototypes",
+        "## Theoretical research programme (ROA)",
+        "## Engineering programme (AOSP)",
+        "## Evidence-led software engineering (CORA)",
+        "## Cognitive research and runtime (iKant-EDU)",
+        "## Proposed epistemic operating environment (EVRIA)",
+        "## Experimental applications and engineering lessons",
     )
     positions = [readme.find(item) for item in sections]
     require(all(p >= 0 for p in positions) and positions == sorted(positions)
             and len(set(positions)) == len(sections), "readme-section-order")
+    # The programme map classifies initiatives; it must not imply shared runtime or certification.
+    map_start = readme.find("### Programme structure")
+    map_end = readme.find("## Evidence-led software engineering (CORA)", map_start)
+    overview = readme[map_start:map_end] if map_start >= 0 and map_end > map_start else ""
+    for claim in (
+        "**ROA** (theoretical research)",
+        "**AOSP** (engineering programme)",
+        "**[CORA]",
+        "**iKant-EDU**",
+        "**EVRIA**",
+        "**EXPERIMENTAL ONLY**",
+        "not enterprise-ready",
+        "Juriscribe is closed and unmaintained",
+    ):
+        require(claim in overview, "programme-map:" + claim)
+    for technique in (
+        "Content-addressed version control",
+        "Mutation testing",
+        "Combinatorial fault testing and bounded convergence analysis",
+        "Modelled scenarios are not physical code mutations",
+    ):
+        require(technique in readme, "cora-engineering-method:" + technique)
     diagrams = re.findall(r"```mermaid\n(.*?)\n```", readme, re.S)
     require(len(diagrams) == 2 and all(d.startswith("flowchart LR\n") for d in diagrams),
             "readme-two-horizontal-diagrams")

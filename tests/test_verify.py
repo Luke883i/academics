@@ -37,6 +37,10 @@ class ProgrammeContractTests(unittest.TestCase):
                 "https://github.com/Luke883i/cora", "https://example.invalid/cora"),
             "release-overclaim": self.readme.replace(
                 "subject to validation", "already validated", 1),
+            "programme-map-omission": self.readme.replace(
+                "### Programme structure", "### Programme directory", 1),
+            "uncertified-prototype-overclaim": self.readme.replace(
+                "**EXPERIMENTAL ONLY**", "**ENTERPRISE READY**", 1),
             "editorial-prompt-trace": self.readme.replace(
                 "### From requirements to evidence", "### Two horizontal diagrams", 1),
             "academic-link": self.readme.replace(
