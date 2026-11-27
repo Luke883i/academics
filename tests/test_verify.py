@@ -28,7 +28,7 @@ class ProgrammeContractTests(unittest.TestCase):
 
     def test_synthetic_negative_mutations(self):
         text_mutants = {
-            "programme-identity": self.readme.replace("# AOSP", "# ROA", 1),
+            "programme-identity": self.readme.replace("## Engineering programme (AOSP)", "## Engineering programme (ROA)", 1),
             "missing-header": self.readme.replace("<!-- programme-header:v2 -->", "", 1),
             "authority-launder": self.readme.replace(
                 "Membership does not imply formal derivation",
